@@ -1,0 +1,462 @@
+{
+  "stage": "Endline",
+  "selectedStageKpiSummary": {
+    "stage": "Endline",
+    "defects": 9918,
+    "denominator": 212051,
+    "rate": 4.68,
+    "target": 2,
+    "status": "Critical",
+    "activeSoCount": 51,
+    "activeLineCount": 10
+  },
+  "donutValues": [
+    {
+      "name": "Endline Defect Qty",
+      "value": 9918,
+      "color": "#123C69"
+    },
+    {
+      "name": "Passed Garments",
+      "value": 202133,
+      "color": "#CBD5E1"
+    }
+  ],
+  "topDefects": [
+    {
+      "name": "Oil Stain",
+      "defects": 2823,
+      "rate": 1.33,
+      "share": 28.46,
+      "status": "Critical"
+    },
+    {
+      "name": "Dirty Mark",
+      "defects": 1277,
+      "rate": 0.6,
+      "share": 12.88,
+      "status": "Watch"
+    },
+    {
+      "name": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 1099,
+      "rate": 0.52,
+      "share": 11.08,
+      "status": "Watch"
+    },
+    {
+      "name": "Open Seam",
+      "defects": 703,
+      "rate": 0.33,
+      "share": 7.09,
+      "status": "Good"
+    },
+    {
+      "name": "Broken Stitch",
+      "defects": 686,
+      "rate": 0.32,
+      "share": 6.92,
+      "status": "Good"
+    },
+    {
+      "name": "Skip stitching",
+      "defects": 649,
+      "rate": 0.31,
+      "share": 6.54,
+      "status": "Good"
+    },
+    {
+      "name": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 465,
+      "rate": 0.22,
+      "share": 4.69,
+      "status": "Good"
+    },
+    {
+      "name": "Color Shading",
+      "defects": 458,
+      "rate": 0.22,
+      "share": 4.62,
+      "status": "Good"
+    },
+    {
+      "name": "Asymmetry on left and right",
+      "defects": 394,
+      "rate": 0.19,
+      "share": 3.97,
+      "status": "Good"
+    },
+    {
+      "name": "CC Label- incorrect/ insecure/ off positioned",
+      "defects": 227,
+      "rate": 0.11,
+      "share": 2.29,
+      "status": "Good"
+    }
+  ],
+  "trend": [
+    {
+      "weekStart": "2026-01-05",
+      "isoWeek": "2026-W02",
+      "weekNumber": 2,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 2.2,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-12",
+      "isoWeek": "2026-W03",
+      "weekNumber": 3,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 2.51,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-19",
+      "isoWeek": "2026-W04",
+      "weekNumber": 4,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 3.29,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-26",
+      "isoWeek": "2026-W05",
+      "weekNumber": 5,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 3.28,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-02",
+      "isoWeek": "2026-W06",
+      "weekNumber": 6,
+      "month": "Feb",
+      "inline": 0,
+      "endline": 3.23,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-09",
+      "isoWeek": "2026-W07",
+      "weekNumber": 7,
+      "month": "Feb",
+      "inline": 0,
+      "endline": 2.62,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-16",
+      "isoWeek": "2026-W08",
+      "weekNumber": 8,
+      "month": "Feb",
+      "inline": 0,
+      "endline": 1.97,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-23",
+      "isoWeek": "2026-W09",
+      "weekNumber": 9,
+      "month": "Feb",
+      "inline": 0,
+      "endline": 2.01,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-02",
+      "isoWeek": "2026-W10",
+      "weekNumber": 10,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 1.54,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-09",
+      "isoWeek": "2026-W11",
+      "weekNumber": 11,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 2.6,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-16",
+      "isoWeek": "2026-W12",
+      "weekNumber": 12,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 3.66,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-23",
+      "isoWeek": "2026-W13",
+      "weekNumber": 13,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 3.76,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-30",
+      "isoWeek": "2026-W14",
+      "weekNumber": 14,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 3.96,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-06",
+      "isoWeek": "2026-W15",
+      "weekNumber": 15,
+      "month": "Apr",
+      "inline": 0,
+      "endline": 4.09,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-13",
+      "isoWeek": "2026-W16",
+      "weekNumber": 16,
+      "month": "Apr",
+      "inline": 0,
+      "endline": 4.18,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-20",
+      "isoWeek": "2026-W17",
+      "weekNumber": 17,
+      "month": "Apr",
+      "inline": 0,
+      "endline": 9.03,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-27",
+      "isoWeek": "2026-W18",
+      "weekNumber": 18,
+      "month": "Apr",
+      "inline": 0,
+      "endline": 11.37,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-04",
+      "isoWeek": "2026-W19",
+      "weekNumber": 19,
+      "month": "May",
+      "inline": 0,
+      "endline": 6.21,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-11",
+      "isoWeek": "2026-W20",
+      "weekNumber": 20,
+      "month": "May",
+      "inline": 0,
+      "endline": 4.93,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-18",
+      "isoWeek": "2026-W21",
+      "weekNumber": 21,
+      "month": "May",
+      "inline": 0,
+      "endline": 4.38,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-25",
+      "isoWeek": "2026-W22",
+      "weekNumber": 22,
+      "month": "May",
+      "inline": 0,
+      "endline": 3,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-01",
+      "isoWeek": "2026-W23",
+      "weekNumber": 23,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 3.37,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-08",
+      "isoWeek": "2026-W24",
+      "weekNumber": 24,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 4.22,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-15",
+      "isoWeek": "2026-W25",
+      "weekNumber": 25,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 2.72,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    }
+  ],
+  "detailTable": [
+    {
+      "defectDescription": "Oil Stain",
+      "defects": 2823,
+      "denominator": 212051,
+      "rate": 1.33,
+      "share": 28.46,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Dirty Mark",
+      "defects": 1277,
+      "denominator": 212051,
+      "rate": 0.6,
+      "share": 12.88,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 1099,
+      "denominator": 212051,
+      "rate": 0.52,
+      "share": 11.08,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Open Seam",
+      "defects": 703,
+      "denominator": 212051,
+      "rate": 0.33,
+      "share": 7.09,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "defects": 686,
+      "denominator": 212051,
+      "rate": 0.32,
+      "share": 6.92,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Skip stitching",
+      "defects": 649,
+      "denominator": 212051,
+      "rate": 0.31,
+      "share": 6.54,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 465,
+      "denominator": 212051,
+      "rate": 0.22,
+      "share": 4.69,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Color Shading",
+      "defects": 458,
+      "denominator": 212051,
+      "rate": 0.22,
+      "share": 4.62,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Asymmetry on left and right",
+      "defects": 394,
+      "denominator": 212051,
+      "rate": 0.19,
+      "share": 3.97,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "defects": 227,
+      "denominator": 212051,
+      "rate": 0.11,
+      "share": 2.29,
+      "status": "Good"
+    }
+  ],
+  "meta": {
+    "rowCount": 3263,
+    "appliedFilters": {
+      "customer": "Travis Mathew",
+      "factory": "G3",
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": [
+        "Endline"
+      ]
+    },
+    "generatedAt": "2026-06-22T07:29:20.941Z"
+  }
+}

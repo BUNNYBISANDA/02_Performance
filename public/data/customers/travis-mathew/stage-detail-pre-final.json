@@ -2,23 +2,23 @@
   "stage": "Pre Final",
   "selectedStageKpiSummary": {
     "stage": "Pre Final",
-    "defects": 61,
-    "denominator": 2328,
-    "rate": 2.62,
+    "defects": 74,
+    "denominator": 2973,
+    "rate": 2.49,
     "target": 1.2,
     "status": "Critical",
-    "activeSoCount": 12,
-    "activeLineCount": 9
+    "activeSoCount": 16,
+    "activeLineCount": 10
   },
   "donutValues": [
     {
       "name": "Pre Final Defect Qty",
-      "value": 61,
+      "value": 74,
       "color": "#F28C28"
     },
     {
       "name": "Passed Garments",
-      "value": 2267,
+      "value": 2899,
       "color": "#CBD5E1"
     }
   ],
@@ -26,71 +26,71 @@
     {
       "name": "Oil Stain",
       "defects": 16,
-      "rate": 0.69,
-      "share": 26.23,
+      "rate": 0.54,
+      "share": 21.62,
       "status": "Critical"
     },
     {
       "name": "Asymmetry on left and right",
       "defects": 9,
-      "rate": 0.39,
-      "share": 14.75,
+      "rate": 0.3,
+      "share": 12.16,
       "status": "Watch"
     },
     {
       "name": "CC Label- incorrect/ insecure/ off positioned",
       "defects": 9,
-      "rate": 0.39,
-      "share": 14.75,
+      "rate": 0.3,
+      "share": 12.16,
       "status": "Watch"
     },
     {
       "name": "Color Shading",
       "defects": 7,
-      "rate": 0.3,
-      "share": 11.48,
-      "status": "Watch"
-    },
-    {
-      "name": "Heat Transfer- All Defects",
-      "defects": 4,
-      "rate": 0.17,
-      "share": 6.56,
+      "rate": 0.24,
+      "share": 9.46,
       "status": "Good"
     },
     {
       "name": "Zipper Defects",
-      "defects": 4,
+      "defects": 7,
+      "rate": 0.24,
+      "share": 9.46,
+      "status": "Good"
+    },
+    {
+      "name": "Heat Transfer- All Defects",
+      "defects": 5,
       "rate": 0.17,
-      "share": 6.56,
+      "share": 6.76,
+      "status": "Good"
+    },
+    {
+      "name": "Other Sewing/ Ironing Defects",
+      "defects": 4,
+      "rate": 0.13,
+      "share": 5.41,
       "status": "Good"
     },
     {
       "name": "Other  Measurements  Defects",
       "defects": 3,
-      "rate": 0.13,
-      "share": 4.92,
+      "rate": 0.1,
+      "share": 4.05,
+      "status": "Good"
+    },
+    {
+      "name": "Broken Stitch",
+      "defects": 2,
+      "rate": 0.07,
+      "share": 2.7,
       "status": "Good"
     },
     {
       "name": "Dirty Mark",
       "defects": 2,
-      "rate": 0.09,
-      "share": 3.28,
-      "status": "Good"
-    },
-    {
-      "name": "Broken Stitch",
-      "defects": 1,
-      "rate": 0.04,
-      "share": 1.64,
-      "status": "Good"
-    },
-    {
-      "name": "Crooked/ Exposed raw edge",
-      "defects": 1,
-      "rate": 0.04,
-      "share": 1.64,
+      "rate": 0.07,
+      "share": 2.7,
       "status": "Good"
     }
   ],
@@ -124,7 +124,29 @@
       "month": "Jun",
       "inline": 0,
       "endline": 0,
-      "preFinal": 0.58,
+      "preFinal": 0.45,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-08",
+      "isoWeek": "2026-W24",
+      "weekNumber": 24,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.42,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-15",
+      "isoWeek": "2026-W25",
+      "weekNumber": 25,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.92,
       "final": 0,
       "thirdParty": 0
     }
@@ -133,91 +155,91 @@
     {
       "defectDescription": "Oil Stain",
       "defects": 16,
-      "denominator": 2328,
-      "rate": 0.69,
-      "share": 26.23,
+      "denominator": 2973,
+      "rate": 0.54,
+      "share": 21.62,
       "status": "Critical"
     },
     {
       "defectDescription": "Asymmetry on left and right",
       "defects": 9,
-      "denominator": 2328,
-      "rate": 0.39,
-      "share": 14.75,
+      "denominator": 2973,
+      "rate": 0.3,
+      "share": 12.16,
       "status": "Watch"
     },
     {
       "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
       "defects": 9,
-      "denominator": 2328,
-      "rate": 0.39,
-      "share": 14.75,
+      "denominator": 2973,
+      "rate": 0.3,
+      "share": 12.16,
       "status": "Watch"
     },
     {
       "defectDescription": "Color Shading",
       "defects": 7,
-      "denominator": 2328,
-      "rate": 0.3,
-      "share": 11.48,
-      "status": "Watch"
-    },
-    {
-      "defectDescription": "Heat Transfer- All Defects",
-      "defects": 4,
-      "denominator": 2328,
-      "rate": 0.17,
-      "share": 6.56,
+      "denominator": 2973,
+      "rate": 0.24,
+      "share": 9.46,
       "status": "Good"
     },
     {
       "defectDescription": "Zipper Defects",
-      "defects": 4,
-      "denominator": 2328,
+      "defects": 7,
+      "denominator": 2973,
+      "rate": 0.24,
+      "share": 9.46,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Heat Transfer- All Defects",
+      "defects": 5,
+      "denominator": 2973,
       "rate": 0.17,
-      "share": 6.56,
+      "share": 6.76,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "defects": 4,
+      "denominator": 2973,
+      "rate": 0.13,
+      "share": 5.41,
       "status": "Good"
     },
     {
       "defectDescription": "Other  Measurements  Defects",
       "defects": 3,
-      "denominator": 2328,
-      "rate": 0.13,
-      "share": 4.92,
+      "denominator": 2973,
+      "rate": 0.1,
+      "share": 4.05,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "defects": 2,
+      "denominator": 2973,
+      "rate": 0.07,
+      "share": 2.7,
       "status": "Good"
     },
     {
       "defectDescription": "Dirty Mark",
       "defects": 2,
-      "denominator": 2328,
-      "rate": 0.09,
-      "share": 3.28,
-      "status": "Good"
-    },
-    {
-      "defectDescription": "Broken Stitch",
-      "defects": 1,
-      "denominator": 2328,
-      "rate": 0.04,
-      "share": 1.64,
-      "status": "Good"
-    },
-    {
-      "defectDescription": "Crooked/ Exposed raw edge",
-      "defects": 1,
-      "denominator": 2328,
-      "rate": 0.04,
-      "share": 1.64,
+      "denominator": 2973,
+      "rate": 0.07,
+      "share": 2.7,
       "status": "Good"
     }
   ],
   "meta": {
-    "rowCount": 183,
+    "rowCount": 226,
     "appliedFilters": {
       "customer": "Travis Mathew",
       "factory": "G3",
-      "startDate": "2026-05-01",
-      "endDate": "2026-06-04",
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
       "soNumbers": [],
       "styles": [],
       "lines": [],
@@ -226,6 +248,6 @@
         "Pre Final"
       ]
     },
-    "generatedAt": "2026-06-22T06:54:33.305Z"
+    "generatedAt": "2026-06-22T07:29:20.944Z"
   }
 }

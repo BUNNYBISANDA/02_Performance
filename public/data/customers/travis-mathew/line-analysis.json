@@ -1,0 +1,4088 @@
+{
+  "lineLevelDefectRates": [
+    {
+      "name": "G3-004",
+      "line": "G3-004",
+      "totalDefects": 26,
+      "denominator": 390,
+      "rate": 6.67,
+      "mainStage": "Endline",
+      "Inline": 1,
+      "Endline": 15.15,
+      "Pre Final": 0,
+      "topDefect": "Dirty Mark",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-029",
+      "line": "G3-029",
+      "totalDefects": 2721,
+      "denominator": 49344,
+      "rate": 5.51,
+      "mainStage": "Endline",
+      "Inline": 2.66,
+      "Endline": 10.45,
+      "Pre Final": 1.54,
+      "Final": 2.97,
+      "Third Party": 3.49,
+      "topDefect": "Oil Stain",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-034",
+      "line": "G3-034",
+      "totalDefects": 2480,
+      "denominator": 48015,
+      "rate": 5.17,
+      "mainStage": "Endline",
+      "Inline": 3.4,
+      "Endline": 6.33,
+      "Pre Final": 1.05,
+      "Third Party": 1.31,
+      "topDefect": "Open Seam",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-033",
+      "line": "G3-033",
+      "totalDefects": 2355,
+      "denominator": 50675,
+      "rate": 4.65,
+      "mainStage": "Endline",
+      "Inline": 2.83,
+      "Endline": 6.05,
+      "Pre Final": 1.5,
+      "Third Party": 4.04,
+      "topDefect": "Oil Stain",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-006",
+      "line": "G3-006",
+      "totalDefects": 900,
+      "denominator": 21564,
+      "rate": 4.17,
+      "mainStage": "Endline",
+      "Inline": 1.67,
+      "Endline": 6.12,
+      "Pre Final": 0.32,
+      "Final": 2.48,
+      "topDefect": "Dirty Mark",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-002",
+      "line": "G3-002",
+      "totalDefects": 83,
+      "denominator": 2110,
+      "rate": 3.93,
+      "mainStage": "Endline",
+      "Inline": 2.19,
+      "Endline": 4.48,
+      "Final": 2.5,
+      "topDefect": "Asymmetry on left and right",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-22,29",
+      "line": "G3-22,29",
+      "totalDefects": 3,
+      "denominator": 80,
+      "rate": 3.75,
+      "mainStage": "Final",
+      "Final": 3.75,
+      "topDefect": "Dirty Mark",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-007",
+      "line": "G3-007",
+      "totalDefects": 1785,
+      "denominator": 50058,
+      "rate": 3.57,
+      "mainStage": "Endline",
+      "Inline": 2.45,
+      "Endline": 4.52,
+      "Pre Final": 0.23,
+      "Final": 1.07,
+      "topDefect": "Oil Stain",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-8,33",
+      "line": "G3-8,33",
+      "totalDefects": 1,
+      "denominator": 32,
+      "rate": 3.13,
+      "mainStage": "Final",
+      "Final": 3.13,
+      "topDefect": "Dirty Mark",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-8,31",
+      "line": "G3-8,31",
+      "totalDefects": 12,
+      "denominator": 450,
+      "rate": 2.67,
+      "mainStage": "Final",
+      "Final": 2.67,
+      "topDefect": "Placket- Pleated/ Slanted/ Exposed",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-008",
+      "line": "G3-008",
+      "totalDefects": 1971,
+      "denominator": 77782,
+      "rate": 2.53,
+      "mainStage": "Endline",
+      "Inline": 2.27,
+      "Endline": 2.76,
+      "Pre Final": 0.86,
+      "Final": 2.06,
+      "topDefect": "Uneven (Seam / Piping / Tape /Rib)",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-29,31",
+      "line": "G3-29,31",
+      "totalDefects": 27,
+      "denominator": 1070,
+      "rate": 2.52,
+      "mainStage": "Final",
+      "Final": 2.52,
+      "topDefect": "Oil Stain",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-7,8,31,34",
+      "line": "G3-7,8,31,34",
+      "totalDefects": 5,
+      "denominator": 200,
+      "rate": 2.5,
+      "mainStage": "Final",
+      "Final": 2.5,
+      "topDefect": "Placket- Pleated/ Slanted/ Exposed",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-031",
+      "line": "G3-031",
+      "totalDefects": 1492,
+      "denominator": 62394,
+      "rate": 2.39,
+      "mainStage": "Inline",
+      "Inline": 3.01,
+      "Endline": 2.19,
+      "Pre Final": 2.22,
+      "Final": 1.28,
+      "topDefect": "Oil Stain",
+      "status": "Good"
+    },
+    {
+      "name": "G3-31,34",
+      "line": "G3-31,34",
+      "totalDefects": 4,
+      "denominator": 200,
+      "rate": 2,
+      "mainStage": "Final",
+      "Final": 2,
+      "topDefect": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-011",
+      "line": "G3-011",
+      "totalDefects": 2,
+      "denominator": 114,
+      "rate": 1.75,
+      "mainStage": "Final",
+      "Final": 1.75,
+      "topDefect": "Broken Stitch",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-013",
+      "line": "G3-013",
+      "totalDefects": 16,
+      "denominator": 1048,
+      "rate": 1.53,
+      "mainStage": "Endline",
+      "Endline": 1.67,
+      "Pre Final": 1.22,
+      "topDefect": "CC Label- incorrect/ insecure/ off positioned",
+      "status": "Good"
+    },
+    {
+      "name": "G3-7,31",
+      "line": "G3-7,31",
+      "totalDefects": 7,
+      "denominator": 500,
+      "rate": 1.4,
+      "mainStage": "Final",
+      "Final": 1.4,
+      "topDefect": "Placket- Pleated/ Slanted/ Exposed",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-8,29,31",
+      "line": "G3-8,29,31",
+      "totalDefects": 3,
+      "denominator": 228,
+      "rate": 1.32,
+      "mainStage": "Final",
+      "Final": 1.32,
+      "topDefect": "Dirty Mark",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-030",
+      "line": "G3-030",
+      "totalDefects": 2,
+      "denominator": 153,
+      "rate": 1.31,
+      "mainStage": "Third Party",
+      "Third Party": 1.31,
+      "topDefect": "Broken Stitch",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-7,8",
+      "line": "G3-7,8",
+      "totalDefects": 8,
+      "denominator": 660,
+      "rate": 1.21,
+      "mainStage": "Final",
+      "Final": 1.21,
+      "topDefect": "Oil Stain",
+      "status": "Critical"
+    },
+    {
+      "name": "G3-7,31,33,34",
+      "line": "G3-7,31,33,34",
+      "totalDefects": 13,
+      "denominator": 1130,
+      "rate": 1.15,
+      "mainStage": "Final",
+      "Final": 1.15,
+      "topDefect": "Dirty Mark",
+      "status": "Critical"
+    },
+    {
+      "name": "Unknown Line",
+      "line": "Unknown Line",
+      "totalDefects": 28,
+      "denominator": 3342,
+      "rate": 0.84,
+      "mainStage": "Final",
+      "Final": 0.84,
+      "topDefect": "Placket- Pleated/ Slanted/ Exposed",
+      "status": "Watch"
+    },
+    {
+      "name": "G3-022",
+      "line": "G3-022",
+      "totalDefects": 0,
+      "denominator": 200,
+      "rate": 0,
+      "mainStage": "Inline",
+      "Pre Final": 0,
+      "topDefect": "Unknown Defect",
+      "status": "Good"
+    },
+    {
+      "name": "G3-6,8",
+      "line": "G3-6,8",
+      "totalDefects": 0,
+      "denominator": 205,
+      "rate": 0,
+      "mainStage": "Inline",
+      "Final": 0,
+      "topDefect": "Unknown Defect",
+      "status": "Good"
+    }
+  ],
+  "lineDefectDetailTable": [
+    {
+      "line": "G3-002",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 21,
+      "denominator": 1585,
+      "rate": 1.32
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 16,
+      "denominator": 1585,
+      "rate": 1.01
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 14,
+      "denominator": 1585,
+      "rate": 0.88
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 1585,
+      "rate": 0.25
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 1585,
+      "rate": 0.19
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 365,
+      "rate": 0.82
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 1585,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 160,
+      "rate": 1.25
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 160,
+      "rate": 1.25
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 1585,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 365,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 365,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 365,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 365,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Snagging",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 1585,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 365,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-002",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 365,
+      "rate": 0
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 165,
+      "rate": 4.24
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 6,
+      "denominator": 165,
+      "rate": 3.64
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 165,
+      "rate": 2.42
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 165,
+      "rate": 1.82
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 165,
+      "rate": 1.21
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 165,
+      "rate": 0.61
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 165,
+      "rate": 0.61
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 165,
+      "rate": 0.61
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 100,
+      "rate": 1
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 100,
+      "rate": 0
+    },
+    {
+      "line": "G3-004",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 125,
+      "rate": 0
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 181,
+      "denominator": 12256,
+      "rate": 1.48
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 143,
+      "denominator": 12256,
+      "rate": 1.17
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 101,
+      "denominator": 12256,
+      "rate": 0.82
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 94,
+      "denominator": 8275,
+      "rate": 1.14
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 87,
+      "denominator": 12256,
+      "rate": 0.71
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 58,
+      "denominator": 12256,
+      "rate": 0.47
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 46,
+      "denominator": 12256,
+      "rate": 0.38
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 39,
+      "denominator": 12256,
+      "rate": 0.32
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 36,
+      "denominator": 12256,
+      "rate": 0.29
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 19,
+      "denominator": 8275,
+      "rate": 0.23
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Endline",
+      "defects": 12,
+      "denominator": 12256,
+      "rate": 0.1
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 11,
+      "denominator": 8275,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 8,
+      "denominator": 12256,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 6,
+      "denominator": 12256,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Rust Stain",
+      "inspectionStage": "Endline",
+      "defects": 6,
+      "denominator": 12256,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 5,
+      "denominator": 12256,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 5,
+      "denominator": 403,
+      "rate": 1.24
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Inline",
+      "defects": 5,
+      "denominator": 8275,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 403,
+      "rate": 0.99
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 8275,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 12256,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 12256,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Leg opening / Hem Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 12256,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Waist Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 12256,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Body Length Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 8275,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 12256,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 12256,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 12256,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 8275,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 12256,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 403,
+      "rate": 0.25
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 8275,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 630,
+      "rate": 0.16
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 12256,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 8275,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 630,
+      "rate": 0.16
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 12256,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 630,
+      "rate": 0
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 403,
+      "rate": 0
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 8275,
+      "rate": 0
+    },
+    {
+      "line": "G3-006",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 12256,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 307,
+      "denominator": 28719,
+      "rate": 1.07
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 213,
+      "denominator": 28719,
+      "rate": 0.74
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 163,
+      "denominator": 19115,
+      "rate": 0.85
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 161,
+      "denominator": 28719,
+      "rate": 0.56
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 114,
+      "denominator": 19115,
+      "rate": 0.6
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 87,
+      "denominator": 28719,
+      "rate": 0.3
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 87,
+      "denominator": 28719,
+      "rate": 0.3
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 75,
+      "denominator": 28719,
+      "rate": 0.26
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 70,
+      "denominator": 28719,
+      "rate": 0.24
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 70,
+      "denominator": 19115,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 68,
+      "denominator": 28719,
+      "rate": 0.24
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 67,
+      "denominator": 28719,
+      "rate": 0.23
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Endline",
+      "defects": 65,
+      "denominator": 28719,
+      "rate": 0.23
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 24,
+      "denominator": 19115,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 23,
+      "denominator": 19115,
+      "rate": 0.12
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 21,
+      "denominator": 28719,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 21,
+      "denominator": 19115,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 18,
+      "denominator": 28719,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 18,
+      "denominator": 28719,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 17,
+      "denominator": 19115,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 14,
+      "denominator": 28719,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 13,
+      "denominator": 28719,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 10,
+      "denominator": 19115,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 7,
+      "denominator": 19115,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 6,
+      "denominator": 19115,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Final",
+      "defects": 6,
+      "denominator": 1784,
+      "rate": 0.34
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 5,
+      "denominator": 1784,
+      "rate": 0.28
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 28719,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 28719,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 19115,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 1784,
+      "rate": 0.17
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 28719,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 1784,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1784,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28719,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1784,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28719,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 19115,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Other  Measurements  Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 440,
+      "rate": 0.23
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1784,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Printing  - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28719,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 28719,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 19115,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 440,
+      "rate": 0
+    },
+    {
+      "line": "G3-007",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 1784,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 308,
+      "denominator": 46423,
+      "rate": 0.66
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 301,
+      "denominator": 28310,
+      "rate": 1.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 152,
+      "denominator": 46423,
+      "rate": 0.33
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 133,
+      "denominator": 46423,
+      "rate": 0.29
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 122,
+      "denominator": 28310,
+      "rate": 0.43
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 121,
+      "denominator": 46423,
+      "rate": 0.26
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 99,
+      "denominator": 46423,
+      "rate": 0.21
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 97,
+      "denominator": 46423,
+      "rate": 0.21
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 83,
+      "denominator": 28310,
+      "rate": 0.29
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Endline",
+      "defects": 77,
+      "denominator": 46423,
+      "rate": 0.17
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 57,
+      "denominator": 46423,
+      "rate": 0.12
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 53,
+      "denominator": 46423,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 46,
+      "denominator": 46423,
+      "rate": 0.1
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 42,
+      "denominator": 46423,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 38,
+      "denominator": 28310,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 32,
+      "denominator": 46423,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 30,
+      "denominator": 28310,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 22,
+      "denominator": 28310,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 21,
+      "denominator": 46423,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 16,
+      "denominator": 28310,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Endline",
+      "defects": 12,
+      "denominator": 46423,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 8,
+      "denominator": 28310,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 46423,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 7,
+      "denominator": 28310,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 7,
+      "denominator": 1654,
+      "rate": 0.42
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 6,
+      "denominator": 46423,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 6,
+      "denominator": 1654,
+      "rate": 0.36
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Final",
+      "defects": 6,
+      "denominator": 1654,
+      "rate": 0.36
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 5,
+      "denominator": 46423,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Inline",
+      "defects": 5,
+      "denominator": 28310,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 5,
+      "denominator": 1395,
+      "rate": 0.36
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 1654,
+      "rate": 0.24
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Waist Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 46423,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 1654,
+      "rate": 0.18
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Heat Transfer- All Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 3,
+      "denominator": 1395,
+      "rate": 0.22
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 28310,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Rust Stain",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 28310,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 28310,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 28310,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Body Length Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 28310,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1395,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 28310,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1395,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 28310,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 28310,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Other Stain defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1395,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Run off stitches/ Uncover seam",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1395,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1654,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 46423,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 1395,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 1654,
+      "rate": 0
+    },
+    {
+      "line": "G3-008",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 28310,
+      "rate": 0
+    },
+    {
+      "line": "G3-011",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 114,
+      "rate": 0.88
+    },
+    {
+      "line": "G3-011",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 114,
+      "rate": 0.88
+    },
+    {
+      "line": "G3-011",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 114,
+      "rate": 0
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 5,
+      "denominator": 720,
+      "rate": 0.69
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 720,
+      "rate": 0.42
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Heat Transfer- All Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 328,
+      "rate": 0.61
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 720,
+      "rate": 0.28
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 720,
+      "rate": 0.28
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 328,
+      "rate": 0.3
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 328,
+      "rate": 0.3
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 720,
+      "rate": 0
+    },
+    {
+      "line": "G3-013",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 328,
+      "rate": 0
+    },
+    {
+      "line": "G3-022",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 200,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 817,
+      "denominator": 17124,
+      "rate": 4.77
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 363,
+      "denominator": 17124,
+      "rate": 2.12
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Third Party",
+      "defects": 208,
+      "denominator": 9186,
+      "rate": 2.26
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 153,
+      "denominator": 17124,
+      "rate": 0.89
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 149,
+      "denominator": 22440,
+      "rate": 0.66
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 130,
+      "denominator": 17124,
+      "rate": 0.76
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 69,
+      "denominator": 22440,
+      "rate": 0.31
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 65,
+      "denominator": 17124,
+      "rate": 0.38
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 61,
+      "denominator": 22440,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 60,
+      "denominator": 22440,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 54,
+      "denominator": 22440,
+      "rate": 0.24
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 51,
+      "denominator": 22440,
+      "rate": 0.23
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Third Party",
+      "defects": 50,
+      "denominator": 9186,
+      "rate": 0.54
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 49,
+      "denominator": 17124,
+      "rate": 0.29
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 47,
+      "denominator": 17124,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 43,
+      "denominator": 22440,
+      "rate": 0.19
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 33,
+      "denominator": 17124,
+      "rate": 0.19
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 31,
+      "denominator": 22440,
+      "rate": 0.14
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 27,
+      "denominator": 17124,
+      "rate": 0.16
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Third Party",
+      "defects": 24,
+      "denominator": 9186,
+      "rate": 0.26
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Inline",
+      "defects": 19,
+      "denominator": 22440,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Leg opening / Hem Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 18,
+      "denominator": 17124,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Inline",
+      "defects": 17,
+      "denominator": 22440,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 17,
+      "denominator": 17124,
+      "rate": 0.1
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Third Party",
+      "defects": 16,
+      "denominator": 9186,
+      "rate": 0.17
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 15,
+      "denominator": 17124,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 15,
+      "denominator": 17124,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 13,
+      "denominator": 17124,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Inline",
+      "defects": 12,
+      "denominator": 22440,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Inline",
+      "defects": 12,
+      "denominator": 22440,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Third Party",
+      "defects": 10,
+      "denominator": 9186,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 17124,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Third Party",
+      "defects": 6,
+      "denominator": 9186,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Body Length Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 17124,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Pre Final",
+      "defects": 4,
+      "denominator": 325,
+      "rate": 1.23
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 17124,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Leg opening / Hem Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 22440,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Third Party",
+      "defects": 4,
+      "denominator": 9186,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Out seam / Inseam Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 22440,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 269,
+      "rate": 1.12
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Out seam / Inseam Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 17124,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Rust Stain",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 17124,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Snagging",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 22440,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 17124,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Button/ Button Hole defects",
+      "inspectionStage": "Third Party",
+      "defects": 2,
+      "denominator": 9186,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 269,
+      "rate": 0.74
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 22440,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 22440,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 17124,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 269,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 22440,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 325,
+      "rate": 0.31
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 22440,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 17124,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 22440,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 269,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 269,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Printing  - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 17124,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 22440,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Third Party",
+      "defects": 1,
+      "denominator": 9186,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 17124,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 22440,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 325,
+      "rate": 0
+    },
+    {
+      "line": "G3-029",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 269,
+      "rate": 0
+    },
+    {
+      "line": "G3-030",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Third Party",
+      "defects": 1,
+      "denominator": 153,
+      "rate": 0.65
+    },
+    {
+      "line": "G3-030",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Third Party",
+      "defects": 1,
+      "denominator": 153,
+      "rate": 0.65
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 202,
+      "denominator": 45389,
+      "rate": 0.45
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 191,
+      "denominator": 15905,
+      "rate": 1.2
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 186,
+      "denominator": 45389,
+      "rate": 0.41
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 176,
+      "denominator": 45389,
+      "rate": 0.39
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 148,
+      "denominator": 45389,
+      "rate": 0.33
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 90,
+      "denominator": 15905,
+      "rate": 0.57
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 65,
+      "denominator": 15905,
+      "rate": 0.41
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 60,
+      "denominator": 45389,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 59,
+      "denominator": 15905,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 52,
+      "denominator": 45389,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 51,
+      "denominator": 45389,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 33,
+      "denominator": 45389,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 27,
+      "denominator": 45389,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 20,
+      "denominator": 45389,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 18,
+      "denominator": 45389,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 17,
+      "denominator": 15905,
+      "rate": 0.11
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Inline",
+      "defects": 15,
+      "denominator": 15905,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Inline",
+      "defects": 11,
+      "denominator": 15905,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 10,
+      "denominator": 15905,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 10,
+      "denominator": 15905,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 45389,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Pre Final",
+      "defects": 7,
+      "denominator": 630,
+      "rate": 1.11
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Pre Final",
+      "defects": 5,
+      "denominator": 630,
+      "rate": 0.79
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 5,
+      "denominator": 470,
+      "rate": 1.06
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 5,
+      "denominator": 15905,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 45389,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 45389,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 45389,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 45389,
+      "rate": 0
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 15905,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 630,
+      "rate": 0.32
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 15905,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Neck/ Collar Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 15905,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 470,
+      "rate": 0.21
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 45389,
+      "rate": 0
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 15905,
+      "rate": 0
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 470,
+      "rate": 0
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 630,
+      "rate": 0
+    },
+    {
+      "line": "G3-031",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 45389,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 895,
+      "denominator": 28808,
+      "rate": 3.11
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 222,
+      "denominator": 28808,
+      "rate": 0.77
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 139,
+      "denominator": 28808,
+      "rate": 0.48
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 124,
+      "denominator": 19780,
+      "rate": 0.63
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 81,
+      "denominator": 19780,
+      "rate": 0.41
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 79,
+      "denominator": 28808,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 75,
+      "denominator": 28808,
+      "rate": 0.26
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 73,
+      "denominator": 19780,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 73,
+      "denominator": 28808,
+      "rate": 0.25
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 61,
+      "denominator": 19780,
+      "rate": 0.31
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 52,
+      "denominator": 28808,
+      "rate": 0.18
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 49,
+      "denominator": 19780,
+      "rate": 0.25
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 45,
+      "denominator": 19780,
+      "rate": 0.23
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 43,
+      "denominator": 28808,
+      "rate": 0.15
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 42,
+      "denominator": 19780,
+      "rate": 0.21
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 35,
+      "denominator": 28808,
+      "rate": 0.12
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 35,
+      "denominator": 28808,
+      "rate": 0.12
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 28,
+      "denominator": 19780,
+      "rate": 0.14
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Inline",
+      "defects": 25,
+      "denominator": 19780,
+      "rate": 0.13
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 22,
+      "denominator": 28808,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 21,
+      "denominator": 28808,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 20,
+      "denominator": 28808,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Third Party",
+      "defects": 15,
+      "denominator": 817,
+      "rate": 1.84
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Third Party",
+      "defects": 12,
+      "denominator": 817,
+      "rate": 1.47
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Inline",
+      "defects": 8,
+      "denominator": 19780,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 28808,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Inline",
+      "defects": 7,
+      "denominator": 19780,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 6,
+      "denominator": 28808,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Inline",
+      "defects": 6,
+      "denominator": 19780,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Pre Final",
+      "defects": 4,
+      "denominator": 1270,
+      "rate": 0.31
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 4,
+      "denominator": 1270,
+      "rate": 0.31
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Printing  - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 28808,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Run off stitches/ Uncover seam",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 28808,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 19780,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Pre Final",
+      "defects": 3,
+      "denominator": 1270,
+      "rate": 0.24
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Third Party",
+      "defects": 3,
+      "denominator": 817,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 1270,
+      "rate": 0.16
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 28808,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Third Party",
+      "defects": 2,
+      "denominator": 817,
+      "rate": 0.24
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 28808,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 19780,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Heat Transfer- All Defects",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 28808,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Other  Measurements  Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 1270,
+      "rate": 0.16
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 28808,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 19780,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1270,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1270,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 19780,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1270,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Third Party",
+      "defects": 1,
+      "denominator": 817,
+      "rate": 0.12
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Snagging",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28808,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28808,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 19780,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28808,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1270,
+      "rate": 0.08
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 28808,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 19780,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 28808,
+      "rate": 0
+    },
+    {
+      "line": "G3-033",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 1270,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 429,
+      "denominator": 30862,
+      "rate": 1.39
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 352,
+      "denominator": 30862,
+      "rate": 1.14
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 285,
+      "denominator": 30862,
+      "rate": 0.92
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 203,
+      "denominator": 14695,
+      "rate": 1.38
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 195,
+      "denominator": 30862,
+      "rate": 0.63
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 154,
+      "denominator": 30862,
+      "rate": 0.5
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 147,
+      "denominator": 30862,
+      "rate": 0.48
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 135,
+      "denominator": 30862,
+      "rate": 0.44
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 121,
+      "denominator": 14695,
+      "rate": 0.82
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 85,
+      "denominator": 14695,
+      "rate": 0.58
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 85,
+      "denominator": 30862,
+      "rate": 0.28
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 63,
+      "denominator": 30862,
+      "rate": 0.2
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 43,
+      "denominator": 30862,
+      "rate": 0.14
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 30,
+      "denominator": 14695,
+      "rate": 0.2
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 27,
+      "denominator": 30862,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 27,
+      "denominator": 14695,
+      "rate": 0.18
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 15,
+      "denominator": 30862,
+      "rate": 0.05
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Third Party",
+      "defects": 11,
+      "denominator": 838,
+      "rate": 1.31
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Inline",
+      "defects": 10,
+      "denominator": 14695,
+      "rate": 0.07
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 8,
+      "denominator": 30862,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Pre Final",
+      "defects": 7,
+      "denominator": 1620,
+      "rate": 0.43
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Pre Final",
+      "defects": 7,
+      "denominator": 1620,
+      "rate": 0.43
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 30862,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 6,
+      "denominator": 14695,
+      "rate": 0.04
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 14695,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 30862,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 14695,
+      "rate": 0.03
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 14695,
+      "rate": 0.02
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 2,
+      "denominator": 14695,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 30862,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1620,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 14695,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 14695,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 30862,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 14695,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 14695,
+      "rate": 0.01
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1620,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 30862,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 1620,
+      "rate": 0.06
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Printing  - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 1,
+      "denominator": 30862,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 1620,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 30862,
+      "rate": 0
+    },
+    {
+      "line": "G3-034",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 14695,
+      "rate": 0
+    },
+    {
+      "line": "G3-22,29",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 80,
+      "rate": 3.75
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 10,
+      "denominator": 1070,
+      "rate": 0.93
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 1070,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 1070,
+      "rate": 0.37
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 1070,
+      "rate": 0.19
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 1070,
+      "rate": 0.19
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Other Stain defects",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 1070,
+      "rate": 0.19
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1070,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1070,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1070,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-29,31",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 1070,
+      "rate": 0
+    },
+    {
+      "line": "G3-31,34",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 200,
+      "rate": 1
+    },
+    {
+      "line": "G3-31,34",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 200,
+      "rate": 0.5
+    },
+    {
+      "line": "G3-31,34",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 200,
+      "rate": 0.5
+    },
+    {
+      "line": "G3-6,8",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 205,
+      "rate": 0
+    },
+    {
+      "line": "G3-7,31",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 500,
+      "rate": 0.8
+    },
+    {
+      "line": "G3-7,31",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 500,
+      "rate": 0.2
+    },
+    {
+      "line": "G3-7,31",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 500,
+      "rate": 0.2
+    },
+    {
+      "line": "G3-7,31",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 500,
+      "rate": 0.2
+    },
+    {
+      "line": "G3-7,31",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 500,
+      "rate": 0
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 1130,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 1130,
+      "rate": 0.27
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 1130,
+      "rate": 0.09
+    },
+    {
+      "line": "G3-7,31,33,34",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 1130,
+      "rate": 0
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 660,
+      "rate": 0.3
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 660,
+      "rate": 0.3
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 660,
+      "rate": 0.15
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 660,
+      "rate": 0.15
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 660,
+      "rate": 0.15
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 660,
+      "rate": 0.15
+    },
+    {
+      "line": "G3-7,8",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 660,
+      "rate": 0
+    },
+    {
+      "line": "G3-7,8,31,34",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 200,
+      "rate": 2
+    },
+    {
+      "line": "G3-7,8,31,34",
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 200,
+      "rate": 0.5
+    },
+    {
+      "line": "G3-8,29,31",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 228,
+      "rate": 0.44
+    },
+    {
+      "line": "G3-8,29,31",
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 228,
+      "rate": 0.44
+    },
+    {
+      "line": "G3-8,29,31",
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 228,
+      "rate": 0.44
+    },
+    {
+      "line": "G3-8,29,31",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 228,
+      "rate": 0
+    },
+    {
+      "line": "G3-8,31",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 7,
+      "denominator": 450,
+      "rate": 1.56
+    },
+    {
+      "line": "G3-8,31",
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 450,
+      "rate": 0.44
+    },
+    {
+      "line": "G3-8,31",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 450,
+      "rate": 0.22
+    },
+    {
+      "line": "G3-8,31",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 450,
+      "rate": 0.22
+    },
+    {
+      "line": "G3-8,31",
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 450,
+      "rate": 0.22
+    },
+    {
+      "line": "G3-8,33",
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 32,
+      "rate": 3.13
+    },
+    {
+      "line": "Unknown Line",
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 14,
+      "denominator": 3342,
+      "rate": 0.42
+    },
+    {
+      "line": "Unknown Line",
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Final",
+      "defects": 10,
+      "denominator": 3342,
+      "rate": 0.3
+    },
+    {
+      "line": "Unknown Line",
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 3342,
+      "rate": 0.06
+    },
+    {
+      "line": "Unknown Line",
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 3342,
+      "rate": 0.03
+    },
+    {
+      "line": "Unknown Line",
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 3342,
+      "rate": 0.03
+    },
+    {
+      "line": "Unknown Line",
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 3342,
+      "rate": 0
+    }
+  ],
+  "totals": {
+    "lineCount": 25,
+    "defectQty": 13944,
+    "denominator": 371944
+  },
+  "meta": {
+    "rowCount": 5850,
+    "appliedFilters": {
+      "customer": "Travis Mathew",
+      "factory": "G3",
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": []
+    },
+    "generatedAt": "2026-06-22T07:29:20.924Z"
+  }
+}

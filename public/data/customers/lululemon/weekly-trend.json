@@ -1,0 +1,283 @@
+{
+  "weeklyTrend": [
+    {
+      "weekStart": "2026-01-05",
+      "isoWeek": "2026-W02",
+      "weekNumber": 2,
+      "month": "Jan",
+      "inline": 1.29,
+      "endline": 1.33,
+      "preFinal": 0,
+      "final": 2.06,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-12",
+      "isoWeek": "2026-W03",
+      "weekNumber": 3,
+      "month": "Jan",
+      "inline": 1.4,
+      "endline": 1.21,
+      "preFinal": 0,
+      "final": 2.44,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-19",
+      "isoWeek": "2026-W04",
+      "weekNumber": 4,
+      "month": "Jan",
+      "inline": 1.23,
+      "endline": 1.29,
+      "preFinal": 0,
+      "final": 2.11,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-26",
+      "isoWeek": "2026-W05",
+      "weekNumber": 5,
+      "month": "Jan",
+      "inline": 1.08,
+      "endline": 1.27,
+      "preFinal": 0,
+      "final": 2.23,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-02",
+      "isoWeek": "2026-W06",
+      "weekNumber": 6,
+      "month": "Feb",
+      "inline": 0.8,
+      "endline": 1.44,
+      "preFinal": 0,
+      "final": 2.28,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-09",
+      "isoWeek": "2026-W07",
+      "weekNumber": 7,
+      "month": "Feb",
+      "inline": 0.78,
+      "endline": 1.18,
+      "preFinal": 0,
+      "final": 1.84,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-16",
+      "isoWeek": "2026-W08",
+      "weekNumber": 8,
+      "month": "Feb",
+      "inline": 0.64,
+      "endline": 1.19,
+      "preFinal": 0,
+      "final": 1.92,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-02-23",
+      "isoWeek": "2026-W09",
+      "weekNumber": 9,
+      "month": "Feb",
+      "inline": 0.88,
+      "endline": 1.15,
+      "preFinal": 0,
+      "final": 1.83,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-02",
+      "isoWeek": "2026-W10",
+      "weekNumber": 10,
+      "month": "Mar",
+      "inline": 0.63,
+      "endline": 1.04,
+      "preFinal": 0,
+      "final": 2.1,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-09",
+      "isoWeek": "2026-W11",
+      "weekNumber": 11,
+      "month": "Mar",
+      "inline": 0.85,
+      "endline": 0.95,
+      "preFinal": 0,
+      "final": 2.25,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-16",
+      "isoWeek": "2026-W12",
+      "weekNumber": 12,
+      "month": "Mar",
+      "inline": 0.85,
+      "endline": 1.05,
+      "preFinal": 0,
+      "final": 2.92,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-23",
+      "isoWeek": "2026-W13",
+      "weekNumber": 13,
+      "month": "Mar",
+      "inline": 1.12,
+      "endline": 1.09,
+      "preFinal": 0,
+      "final": 2.05,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-30",
+      "isoWeek": "2026-W14",
+      "weekNumber": 14,
+      "month": "Mar",
+      "inline": 1.24,
+      "endline": 0.99,
+      "preFinal": 0,
+      "final": 2.25,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-06",
+      "isoWeek": "2026-W15",
+      "weekNumber": 15,
+      "month": "Apr",
+      "inline": 1.09,
+      "endline": 1.16,
+      "preFinal": 0,
+      "final": 2.08,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-13",
+      "isoWeek": "2026-W16",
+      "weekNumber": 16,
+      "month": "Apr",
+      "inline": 0.59,
+      "endline": 1.22,
+      "preFinal": 0,
+      "final": 1.6,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-20",
+      "isoWeek": "2026-W17",
+      "weekNumber": 17,
+      "month": "Apr",
+      "inline": 0.95,
+      "endline": 1.14,
+      "preFinal": 0,
+      "final": 1.7,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-27",
+      "isoWeek": "2026-W18",
+      "weekNumber": 18,
+      "month": "Apr",
+      "inline": 0.96,
+      "endline": 1.19,
+      "preFinal": 0,
+      "final": 2.37,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-04",
+      "isoWeek": "2026-W19",
+      "weekNumber": 19,
+      "month": "May",
+      "inline": 0.7,
+      "endline": 1.39,
+      "preFinal": 0,
+      "final": 1.61,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-11",
+      "isoWeek": "2026-W20",
+      "weekNumber": 20,
+      "month": "May",
+      "inline": 0.85,
+      "endline": 1.05,
+      "preFinal": 0,
+      "final": 0.96,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-18",
+      "isoWeek": "2026-W21",
+      "weekNumber": 21,
+      "month": "May",
+      "inline": 1.58,
+      "endline": 1.24,
+      "preFinal": 0.08,
+      "final": 1.36,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-25",
+      "isoWeek": "2026-W22",
+      "weekNumber": 22,
+      "month": "May",
+      "inline": 1.16,
+      "endline": 1.34,
+      "preFinal": 0.12,
+      "final": 1.97,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-01",
+      "isoWeek": "2026-W23",
+      "weekNumber": 23,
+      "month": "Jun",
+      "inline": 1.53,
+      "endline": 1.71,
+      "preFinal": 0.23,
+      "final": 2.05,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-08",
+      "isoWeek": "2026-W24",
+      "weekNumber": 24,
+      "month": "Jun",
+      "inline": 1.37,
+      "endline": 1.56,
+      "preFinal": 0.46,
+      "final": 1.47,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-15",
+      "isoWeek": "2026-W25",
+      "weekNumber": 25,
+      "month": "Jun",
+      "inline": 1.5,
+      "endline": 1.41,
+      "preFinal": 0.13,
+      "final": 0.74,
+      "thirdParty": 0
+    }
+  ],
+  "meta": {
+    "rowCount": 29553,
+    "appliedFilters": {
+      "customer": "lululemon",
+      "factory": null,
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": []
+    },
+    "generatedAt": "2026-06-22T07:29:21.133Z"
+  }
+}

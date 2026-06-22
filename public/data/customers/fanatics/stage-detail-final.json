@@ -1,0 +1,319 @@
+{
+  "stage": "Final",
+  "selectedStageKpiSummary": {
+    "stage": "Final",
+    "defects": 130,
+    "denominator": 4673,
+    "rate": 2.78,
+    "target": 0.7,
+    "status": "Critical",
+    "activeSoCount": 41,
+    "activeLineCount": 21
+  },
+  "donutValues": [
+    {
+      "name": "Final Defect Qty",
+      "value": 130,
+      "color": "#7C3AED"
+    },
+    {
+      "name": "Passed Garments",
+      "value": 4543,
+      "color": "#CBD5E1"
+    }
+  ],
+  "topDefects": [
+    {
+      "name": "Oil Stain",
+      "defects": 26,
+      "rate": 0.56,
+      "share": 20,
+      "status": "Critical"
+    },
+    {
+      "name": "Printing  - All Defects",
+      "defects": 25,
+      "rate": 0.53,
+      "share": 19.23,
+      "status": "Critical"
+    },
+    {
+      "name": "Broken Stitch",
+      "defects": 18,
+      "rate": 0.39,
+      "share": 13.85,
+      "status": "Watch"
+    },
+    {
+      "name": "Other Sewing/ Ironing Defects",
+      "defects": 12,
+      "rate": 0.26,
+      "share": 9.23,
+      "status": "Good"
+    },
+    {
+      "name": "Skip stitching",
+      "defects": 10,
+      "rate": 0.21,
+      "share": 7.69,
+      "status": "Good"
+    },
+    {
+      "name": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 8,
+      "rate": 0.17,
+      "share": 6.15,
+      "status": "Good"
+    },
+    {
+      "name": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 7,
+      "rate": 0.15,
+      "share": 5.38,
+      "status": "Good"
+    },
+    {
+      "name": "Open Seam",
+      "defects": 6,
+      "rate": 0.13,
+      "share": 4.62,
+      "status": "Good"
+    },
+    {
+      "name": "Color Shading",
+      "defects": 4,
+      "rate": 0.09,
+      "share": 3.08,
+      "status": "Good"
+    },
+    {
+      "name": "Dirty Mark",
+      "defects": 3,
+      "rate": 0.06,
+      "share": 2.31,
+      "status": "Good"
+    }
+  ],
+  "trend": [
+    {
+      "weekStart": "2026-01-05",
+      "isoWeek": "2026-W02",
+      "weekNumber": 2,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0.99,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-12",
+      "isoWeek": "2026-W03",
+      "weekNumber": 3,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.82,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-01-19",
+      "isoWeek": "2026-W04",
+      "weekNumber": 4,
+      "month": "Jan",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-16",
+      "isoWeek": "2026-W12",
+      "weekNumber": 12,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 1.33,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-23",
+      "isoWeek": "2026-W13",
+      "weekNumber": 13,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 7.5,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-03-30",
+      "isoWeek": "2026-W14",
+      "weekNumber": 14,
+      "month": "Mar",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 1.25,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-04-06",
+      "isoWeek": "2026-W15",
+      "weekNumber": 15,
+      "month": "Apr",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.25,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-11",
+      "isoWeek": "2026-W20",
+      "weekNumber": 20,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.35,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-18",
+      "isoWeek": "2026-W21",
+      "weekNumber": 21,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.7,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-25",
+      "isoWeek": "2026-W22",
+      "weekNumber": 22,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 9.2,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-08",
+      "isoWeek": "2026-W24",
+      "weekNumber": 24,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.42,
+      "thirdParty": 0
+    }
+  ],
+  "detailTable": [
+    {
+      "defectDescription": "Oil Stain",
+      "defects": 26,
+      "denominator": 4673,
+      "rate": 0.56,
+      "share": 20,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Printing  - All Defects",
+      "defects": 25,
+      "denominator": 4673,
+      "rate": 0.53,
+      "share": 19.23,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "defects": 18,
+      "denominator": 4673,
+      "rate": 0.39,
+      "share": 13.85,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "defects": 12,
+      "denominator": 4673,
+      "rate": 0.26,
+      "share": 9.23,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Skip stitching",
+      "defects": 10,
+      "denominator": 4673,
+      "rate": 0.21,
+      "share": 7.69,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 8,
+      "denominator": 4673,
+      "rate": 0.17,
+      "share": 6.15,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 7,
+      "denominator": 4673,
+      "rate": 0.15,
+      "share": 5.38,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Open Seam",
+      "defects": 6,
+      "denominator": 4673,
+      "rate": 0.13,
+      "share": 4.62,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Color Shading",
+      "defects": 4,
+      "denominator": 4673,
+      "rate": 0.09,
+      "share": 3.08,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Dirty Mark",
+      "defects": 3,
+      "denominator": 4673,
+      "rate": 0.06,
+      "share": 2.31,
+      "status": "Good"
+    }
+  ],
+  "meta": {
+    "rowCount": 907,
+    "appliedFilters": {
+      "customer": "Fanatics",
+      "factory": "G3",
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": [
+        "Final"
+      ]
+    },
+    "generatedAt": "2026-06-22T07:29:21.380Z"
+  }
+}

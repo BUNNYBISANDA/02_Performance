@@ -49,8 +49,16 @@ if (DATA_MODE === "static") {
   console.info("Static demo data mode is active.");
 }
 
-const STATIC_FILE_BY_PATH: Record<string, string> = {
-  "/filters": "filters.json",
+// Must match slugifyCustomer() in backend/src/scripts/exportStaticData.ts.
+const slugifyCustomer = (customer: string) =>
+  customer.trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+const DEFAULT_STATIC_CUSTOMER_SLUG = "travis-mathew";
+
+const resolveCustomerSlug = (customer: unknown): string =>
+  typeof customer === "string" && customer.trim() ? slugifyCustomer(customer) : DEFAULT_STATIC_CUSTOMER_SLUG;
+
+const STATIC_CUSTOMER_FILE_BY_PATH: Record<string, string> = {
   "/overview": "overview.json",
   "/weekly-trend": "weekly-trend.json",
   "/defect-categories": "defect-categories.json",
@@ -105,12 +113,24 @@ const buildQueryString = (params?: QueryParams) => {
   return query ? `?${query}` : "";
 };
 
+// /filters has a customer-less global file (the static-mode dropdown is populated from
+// it with no customer selected yet); every other endpoint is always customer-scoped, since
+// each demo customer has its own exported snapshot under data/customers/<slug>/.
 const resolveStaticFileName = (normalizedPath: string, params?: QueryParams): string | null => {
+  if (normalizedPath === "/filters" && !params?.customer) return "filters.json";
+
+  const customerSlug = resolveCustomerSlug(params?.customer);
+
+  if (normalizedPath === "/filters") return `customers/${customerSlug}/filters.json`;
+
   if (normalizedPath === "/stage-detail") {
     const stage = typeof params?.stage === "string" ? params.stage : undefined;
-    return (stage && STAGE_STATIC_FILE[stage]) || null;
+    const stageFile = stage && STAGE_STATIC_FILE[stage];
+    return stageFile ? `customers/${customerSlug}/${stageFile}` : null;
   }
-  return STATIC_FILE_BY_PATH[normalizedPath] ?? null;
+
+  const fileName = STATIC_CUSTOMER_FILE_BY_PATH[normalizedPath];
+  return fileName ? `customers/${customerSlug}/${fileName}` : null;
 };
 
 const fetchJson = async <T>(url: string, notConnectableMessage: string, signal?: AbortSignal): Promise<T> => {
@@ -145,12 +165,27 @@ export const getJson = async <T>(
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
 
   if (DATA_MODE === "static") {
+    const customerLabel = typeof params?.customer === "string" && params.customer ? params.customer : "default (Travis Mathew)";
     const fileName = resolveStaticFileName(normalizedPath, params);
-    if (!fileName) throw new ApiError(`No static demo data file is mapped for ${normalizedPath}.`);
+    if (!fileName) {
+      const message = `No static demo data file is mapped for ${normalizedPath}.`;
+      console.error(`[static-data] ${message}`);
+      throw new ApiError(message);
+    }
 
     const url = `${STATIC_DATA_BASE_URL}/${fileName}`;
-    if (import.meta.env.DEV) console.debug("[static-data] request", { endpoint: normalizedPath, url });
-    return fetchJson<T>(url, `Unable to load static demo data file: ${fileName}.`, options.signal);
+    if (import.meta.env.DEV) console.debug("[static-data] request", { endpoint: normalizedPath, customer: customerLabel, url });
+
+    try {
+      // Never substitutes another customer's file on failure — a missing/404 snapshot
+      // surfaces as a clear error instead of silently showing the wrong customer's data.
+      return await fetchJson<T>(url, `Unable to load static demo data for ${customerLabel} (${fileName}).`, options.signal);
+    } catch (error) {
+      if (!options.signal?.aborted) {
+        console.error(`[static-data] Failed to load ${url} for customer "${customerLabel}".`, error);
+      }
+      throw error;
+    }
   }
 
   if (mockDataRequested) throw new ApiError(MOCK_DATA_UNSUPPORTED_MESSAGE);

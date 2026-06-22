@@ -1,0 +1,253 @@
+{
+  "stage": "Pre Final",
+  "selectedStageKpiSummary": {
+    "stage": "Pre Final",
+    "defects": 74,
+    "denominator": 13140,
+    "rate": 0.56,
+    "target": 1.2,
+    "status": "Good",
+    "activeSoCount": 73,
+    "activeLineCount": 25
+  },
+  "donutValues": [
+    {
+      "name": "Pre Final Defect Qty",
+      "value": 74,
+      "color": "#F28C28"
+    },
+    {
+      "name": "Passed Garments",
+      "value": 13066,
+      "color": "#CBD5E1"
+    }
+  ],
+  "topDefects": [
+    {
+      "name": "Un-trim thread",
+      "defects": 24,
+      "rate": 0.18,
+      "share": 32.43,
+      "status": "Critical"
+    },
+    {
+      "name": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "defects": 16,
+      "rate": 0.12,
+      "share": 21.62,
+      "status": "Critical"
+    },
+    {
+      "name": "Hole (by Trimming/ by blunt needle)",
+      "defects": 12,
+      "rate": 0.09,
+      "share": 16.22,
+      "status": "Watch"
+    },
+    {
+      "name": "Open Seam",
+      "defects": 6,
+      "rate": 0.05,
+      "share": 8.11,
+      "status": "Good"
+    },
+    {
+      "name": "Skip stitching",
+      "defects": 5,
+      "rate": 0.04,
+      "share": 6.76,
+      "status": "Good"
+    },
+    {
+      "name": "Foreign Yarn / Slub / Knot",
+      "defects": 2,
+      "rate": 0.02,
+      "share": 2.7,
+      "status": "Good"
+    },
+    {
+      "name": "Oil Stain",
+      "defects": 2,
+      "rate": 0.02,
+      "share": 2.7,
+      "status": "Good"
+    },
+    {
+      "name": "Body Width Out of Tolerance",
+      "defects": 1,
+      "rate": 0.01,
+      "share": 1.35,
+      "status": "Good"
+    },
+    {
+      "name": "Bonding - All Defects",
+      "defects": 1,
+      "rate": 0.01,
+      "share": 1.35,
+      "status": "Good"
+    },
+    {
+      "name": "Broken Stitch",
+      "defects": 1,
+      "rate": 0.01,
+      "share": 1.35,
+      "status": "Good"
+    }
+  ],
+  "trend": [
+    {
+      "weekStart": "2026-05-18",
+      "isoWeek": "2026-W21",
+      "weekNumber": 21,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.08,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-25",
+      "isoWeek": "2026-W22",
+      "weekNumber": 22,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.12,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-01",
+      "isoWeek": "2026-W23",
+      "weekNumber": 23,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.23,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-08",
+      "isoWeek": "2026-W24",
+      "weekNumber": 24,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.46,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-15",
+      "isoWeek": "2026-W25",
+      "weekNumber": 25,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0.13,
+      "final": 0,
+      "thirdParty": 0
+    }
+  ],
+  "detailTable": [
+    {
+      "defectDescription": "Un-trim thread",
+      "defects": 24,
+      "denominator": 13140,
+      "rate": 0.18,
+      "share": 32.43,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "defects": 16,
+      "denominator": 13140,
+      "rate": 0.12,
+      "share": 21.62,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "defects": 12,
+      "denominator": 13140,
+      "rate": 0.09,
+      "share": 16.22,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Open Seam",
+      "defects": 6,
+      "denominator": 13140,
+      "rate": 0.05,
+      "share": 8.11,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Skip stitching",
+      "defects": 5,
+      "denominator": 13140,
+      "rate": 0.04,
+      "share": 6.76,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "defects": 2,
+      "denominator": 13140,
+      "rate": 0.02,
+      "share": 2.7,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Oil Stain",
+      "defects": 2,
+      "denominator": 13140,
+      "rate": 0.02,
+      "share": 2.7,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Body Width Out of Tolerance",
+      "defects": 1,
+      "denominator": 13140,
+      "rate": 0.01,
+      "share": 1.35,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Bonding - All Defects",
+      "defects": 1,
+      "denominator": 13140,
+      "rate": 0.01,
+      "share": 1.35,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "defects": 1,
+      "denominator": 13140,
+      "rate": 0.01,
+      "share": 1.35,
+      "status": "Good"
+    }
+  ],
+  "meta": {
+    "rowCount": 680,
+    "appliedFilters": {
+      "customer": "lululemon",
+      "factory": null,
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": [
+        "Pre Final"
+      ]
+    },
+    "generatedAt": "2026-06-22T07:29:21.287Z"
+  }
+}

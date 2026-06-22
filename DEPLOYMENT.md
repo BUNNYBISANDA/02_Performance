@@ -30,15 +30,16 @@ live database changes. For real live data, deploy the backend (Section 1) and sw
   backend at all.
 
 This mode exists purely so the GitHub Pages build shows *something* before a backend
-is deployed. It is read-only sample data, not live data: the customer/factory
-dropdowns are limited to whatever was baked into `filters.json`, and changing
-filters won't fetch new combinations unless matching JSON files exist for them.
+is deployed. It is read-only sample data, not live data: the customer dropdown is
+limited to whichever customers have an exported folder, and changing other filters
+(factory, SO, style, line, defect, stage) won't fetch new combinations — only the
+**customer** selector triggers a different static file in this mode.
 
 ### Regenerating the static snapshot
 
-The JSON files in `public/data/` are produced by a backend script that reuses the
-exact same service functions the live API routes call, so the shape always matches
-what `/api/...` would return:
+The JSON files under `public/data/` are produced by a backend script that reuses
+the exact same service functions the live API routes call, so the shape always
+matches what `/api/...` would return:
 
 ```bash
 cd backend
@@ -47,14 +48,32 @@ cd ..
 npm run build            # bakes the refreshed public/data/*.json into dist/
 ```
 
-`backend/src/scripts/exportStaticData.ts` exports a fixed default filter scope
-(customer `Travis Mathew`, factory `G3`, `2026-05-01` to `2026-06-04`) into:
-`filters.json`, `overview.json`, `weekly-trend.json`, `defect-categories.json`,
-`line-analysis.json`, and `stage-detail-{inline,endline,pre-final,final,third-party}.json`.
+`backend/src/scripts/exportStaticData.ts` exports three demo customers — `Travis Mathew`,
+`lululemon`, `Fanatics` — over `2026-01-01` to `2026-06-30`, each into its own folder:
 
-The files committed to this repo today are placeholders (all zeros/empty arrays) —
-run the export script above against a real database before relying on this for an
-actual demo.
+```
+public/data/filters.json                          # global: customer dropdown + date range
+public/data/customers/travis-mathew/overview.json
+public/data/customers/travis-mathew/weekly-trend.json
+public/data/customers/travis-mathew/defect-categories.json
+public/data/customers/travis-mathew/line-analysis.json
+public/data/customers/travis-mathew/stage-detail-{inline,endline,pre-final,final,third-party}.json
+public/data/customers/lululemon/...                # same set
+public/data/customers/fanatics/...                 # same set
+```
+
+The script does not force `factory=G3` for every customer — it probes each customer's
+real row count with and without the G3 filter first, and only uses G3 if it actually
+returns rows for that customer; otherwise it exports with no factory filter so the
+snapshot still reflects genuine non-zero data. As of the last run: Travis Mathew →
+G3 (5,850 rows), lululemon → no factory filter (29,553 rows, G3 had 0), Fanatics → G3
+(5,810 rows).
+
+`src/services/apiClient.ts` resolves `customers/<slug>/...` from the `customer` query
+param on every customer-scoped endpoint (slug = lowercased, non-alphanumeric runs
+replaced with `-`), defaulting to `travis-mathew` when no customer is selected. A
+missing/unmapped customer's static file 404s with a clear console error — it never
+silently falls back to another customer's data.
 
 ### Switching a deployed site from static demo data to live data
 

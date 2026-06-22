@@ -1,0 +1,1083 @@
+{
+  "topCategories": [
+    {
+      "name": "Oil Stain",
+      "total": 3063,
+      "Endline": 2823,
+      "Inline": 198,
+      "Final": 26,
+      "Pre Final": 16
+    },
+    {
+      "name": "Uneven (Seam / Piping / Tape /Rib)",
+      "total": 1950,
+      "Endline": 1099,
+      "Inline": 829,
+      "Final": 21,
+      "Pre Final": 1
+    },
+    {
+      "name": "Dirty Mark",
+      "total": 1312,
+      "Endline": 1277,
+      "Final": 25,
+      "Inline": 8,
+      "Pre Final": 2
+    },
+    {
+      "name": "Placket- Pleated/ Slanted/ Exposed",
+      "total": 1186,
+      "Inline": 671,
+      "Endline": 465,
+      "Final": 48,
+      "Pre Final": 2
+    },
+    {
+      "name": "Open Seam",
+      "total": 936,
+      "Endline": 703,
+      "Inline": 228,
+      "Third Party": 5
+    },
+    {
+      "name": "Broken Stitch",
+      "total": 929,
+      "Endline": 686,
+      "Inline": 155,
+      "Third Party": 77,
+      "Final": 9,
+      "Pre Final": 2
+    },
+    {
+      "name": "Skip stitching",
+      "total": 837,
+      "Endline": 649,
+      "Inline": 188
+    },
+    {
+      "name": "Asymmetry on left and right",
+      "total": 722,
+      "Endline": 394,
+      "Inline": 318,
+      "Pre Final": 9,
+      "Final": 1
+    },
+    {
+      "name": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "total": 619,
+      "Inline": 496,
+      "Endline": 106,
+      "Final": 16,
+      "Pre Final": 1
+    },
+    {
+      "name": "Color Shading",
+      "total": 541,
+      "Endline": 458,
+      "Inline": 58,
+      "Final": 10,
+      "Third Party": 8,
+      "Pre Final": 7
+    },
+    {
+      "name": "CC Label- incorrect/ insecure/ off positioned",
+      "total": 269,
+      "Endline": 227,
+      "Inline": 33,
+      "Pre Final": 9
+    },
+    {
+      "name": "Body Width Out of Tolerance",
+      "total": 230,
+      "Third Party": 220,
+      "Endline": 9,
+      "Pre Final": 1
+    },
+    {
+      "name": "Hole (by Trimming/ by blunt needle)",
+      "total": 228,
+      "Endline": 196,
+      "Inline": 28,
+      "Final": 2,
+      "Pre Final": 2
+    },
+    {
+      "name": "Zipper Defects",
+      "total": 225,
+      "Endline": 144,
+      "Inline": 73,
+      "Pre Final": 7,
+      "Third Party": 1
+    },
+    {
+      "name": "Bar tack Defects",
+      "total": 201,
+      "Endline": 174,
+      "Inline": 27
+    },
+    {
+      "name": "Chalk/ Pen Mark",
+      "total": 183,
+      "Endline": 182,
+      "Inline": 1
+    },
+    {
+      "name": "Un-trim thread",
+      "total": 171,
+      "Endline": 144,
+      "Inline": 22,
+      "Final": 4,
+      "Pre Final": 1
+    },
+    {
+      "name": "Other Sewing/ Ironing Defects",
+      "total": 44,
+      "Third Party": 27,
+      "Final": 13,
+      "Pre Final": 4
+    },
+    {
+      "name": "Needle Marks  (by repairing)",
+      "total": 38,
+      "Third Party": 17,
+      "Inline": 16,
+      "Final": 5
+    },
+    {
+      "name": "Glue Mark",
+      "total": 33,
+      "Endline": 30,
+      "Final": 3
+    }
+  ],
+  "detailTable": [
+    {
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Endline",
+      "defects": 2823,
+      "denominator": 212051,
+      "rate": 1.33,
+      "share": 20.25
+    },
+    {
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Endline",
+      "defects": 1277,
+      "denominator": 212051,
+      "rate": 0.6,
+      "share": 9.16
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Endline",
+      "defects": 1099,
+      "denominator": 212051,
+      "rate": 0.52,
+      "share": 7.88
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Inline",
+      "defects": 829,
+      "denominator": 128985,
+      "rate": 0.64,
+      "share": 5.95
+    },
+    {
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Endline",
+      "defects": 703,
+      "denominator": 212051,
+      "rate": 0.33,
+      "share": 5.04
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Endline",
+      "defects": 686,
+      "denominator": 212051,
+      "rate": 0.32,
+      "share": 4.92
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Inline",
+      "defects": 671,
+      "denominator": 128985,
+      "rate": 0.52,
+      "share": 4.81
+    },
+    {
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Endline",
+      "defects": 649,
+      "denominator": 212051,
+      "rate": 0.31,
+      "share": 4.65
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Inline",
+      "defects": 496,
+      "denominator": 128985,
+      "rate": 0.38,
+      "share": 3.56
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Endline",
+      "defects": 465,
+      "denominator": 212051,
+      "rate": 0.22,
+      "share": 3.33
+    },
+    {
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Endline",
+      "defects": 458,
+      "denominator": 212051,
+      "rate": 0.22,
+      "share": 3.28
+    },
+    {
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Endline",
+      "defects": 394,
+      "denominator": 212051,
+      "rate": 0.19,
+      "share": 2.83
+    },
+    {
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Inline",
+      "defects": 318,
+      "denominator": 128985,
+      "rate": 0.25,
+      "share": 2.28
+    },
+    {
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Inline",
+      "defects": 228,
+      "denominator": 128985,
+      "rate": 0.18,
+      "share": 1.64
+    },
+    {
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Endline",
+      "defects": 227,
+      "denominator": 212051,
+      "rate": 0.11,
+      "share": 1.63
+    },
+    {
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Third Party",
+      "defects": 220,
+      "denominator": 10994,
+      "rate": 2,
+      "share": 1.58
+    },
+    {
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Inline",
+      "defects": 198,
+      "denominator": 128985,
+      "rate": 0.15,
+      "share": 1.42
+    },
+    {
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Endline",
+      "defects": 196,
+      "denominator": 212051,
+      "rate": 0.09,
+      "share": 1.41
+    },
+    {
+      "defectDescription": "Skip stitching",
+      "inspectionStage": "Inline",
+      "defects": 188,
+      "denominator": 128985,
+      "rate": 0.15,
+      "share": 1.35
+    },
+    {
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Endline",
+      "defects": 182,
+      "denominator": 212051,
+      "rate": 0.09,
+      "share": 1.31
+    },
+    {
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Endline",
+      "defects": 174,
+      "denominator": 212051,
+      "rate": 0.08,
+      "share": 1.25
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Inline",
+      "defects": 155,
+      "denominator": 128985,
+      "rate": 0.12,
+      "share": 1.11
+    },
+    {
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Endline",
+      "defects": 144,
+      "denominator": 212051,
+      "rate": 0.07,
+      "share": 1.03
+    },
+    {
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Endline",
+      "defects": 144,
+      "denominator": 212051,
+      "rate": 0.07,
+      "share": 1.03
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Endline",
+      "defects": 106,
+      "denominator": 212051,
+      "rate": 0.05,
+      "share": 0.76
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Third Party",
+      "defects": 77,
+      "denominator": 10994,
+      "rate": 0.7,
+      "share": 0.55
+    },
+    {
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Inline",
+      "defects": 73,
+      "denominator": 128985,
+      "rate": 0.06,
+      "share": 0.52
+    },
+    {
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Inline",
+      "defects": 58,
+      "denominator": 128985,
+      "rate": 0.04,
+      "share": 0.42
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Final",
+      "defects": 48,
+      "denominator": 12951,
+      "rate": 0.37,
+      "share": 0.34
+    },
+    {
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Inline",
+      "defects": 33,
+      "denominator": 128985,
+      "rate": 0.03,
+      "share": 0.24
+    },
+    {
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Endline",
+      "defects": 30,
+      "denominator": 212051,
+      "rate": 0.01,
+      "share": 0.22
+    },
+    {
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Inline",
+      "defects": 28,
+      "denominator": 128985,
+      "rate": 0.02,
+      "share": 0.2
+    },
+    {
+      "defectDescription": "Bar tack Defects",
+      "inspectionStage": "Inline",
+      "defects": 27,
+      "denominator": 128985,
+      "rate": 0.02,
+      "share": 0.19
+    },
+    {
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Third Party",
+      "defects": 27,
+      "denominator": 10994,
+      "rate": 0.25,
+      "share": 0.19
+    },
+    {
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Final",
+      "defects": 26,
+      "denominator": 12951,
+      "rate": 0.2,
+      "share": 0.19
+    },
+    {
+      "defectDescription": "Acc.Defects",
+      "inspectionStage": "Endline",
+      "defects": 25,
+      "denominator": 212051,
+      "rate": 0.01,
+      "share": 0.18
+    },
+    {
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Final",
+      "defects": 25,
+      "denominator": 12951,
+      "rate": 0.19,
+      "share": 0.18
+    },
+    {
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Endline",
+      "defects": 22,
+      "denominator": 212051,
+      "rate": 0.01,
+      "share": 0.16
+    },
+    {
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Inline",
+      "defects": 22,
+      "denominator": 128985,
+      "rate": 0.02,
+      "share": 0.16
+    },
+    {
+      "defectDescription": "Leg opening / Hem Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 21,
+      "denominator": 212051,
+      "rate": 0.01,
+      "share": 0.15
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Final",
+      "defects": 21,
+      "denominator": 12951,
+      "rate": 0.16,
+      "share": 0.15
+    },
+    {
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Endline",
+      "defects": 19,
+      "denominator": 212051,
+      "rate": 0.01,
+      "share": 0.14
+    },
+    {
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Third Party",
+      "defects": 17,
+      "denominator": 10994,
+      "rate": 0.15,
+      "share": 0.12
+    },
+    {
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Inline",
+      "defects": 16,
+      "denominator": 128985,
+      "rate": 0.01,
+      "share": 0.11
+    },
+    {
+      "defectDescription": "Oil Stain",
+      "inspectionStage": "Pre Final",
+      "defects": 16,
+      "denominator": 2973,
+      "rate": 0.54,
+      "share": 0.11
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Final",
+      "defects": 16,
+      "denominator": 12951,
+      "rate": 0.12,
+      "share": 0.11
+    },
+    {
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Final",
+      "defects": 13,
+      "denominator": 12951,
+      "rate": 0.1,
+      "share": 0.09
+    },
+    {
+      "defectDescription": "Rust Stain",
+      "inspectionStage": "Endline",
+      "defects": 11,
+      "denominator": 212051,
+      "rate": 0.01,
+      "share": 0.08
+    },
+    {
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Inline",
+      "defects": 11,
+      "denominator": 128985,
+      "rate": 0.01,
+      "share": 0.08
+    },
+    {
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Final",
+      "defects": 10,
+      "denominator": 12951,
+      "rate": 0.08,
+      "share": 0.07
+    },
+    {
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Third Party",
+      "defects": 10,
+      "denominator": 10994,
+      "rate": 0.09,
+      "share": 0.07
+    },
+    {
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Pre Final",
+      "defects": 9,
+      "denominator": 2973,
+      "rate": 0.3,
+      "share": 0.06
+    },
+    {
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 9,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.06
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Final",
+      "defects": 9,
+      "denominator": 12951,
+      "rate": 0.07,
+      "share": 0.06
+    },
+    {
+      "defectDescription": "CC Label- incorrect/ insecure/ off positioned",
+      "inspectionStage": "Pre Final",
+      "defects": 9,
+      "denominator": 2973,
+      "rate": 0.3,
+      "share": 0.06
+    },
+    {
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Third Party",
+      "defects": 8,
+      "denominator": 10994,
+      "rate": 0.07,
+      "share": 0.06
+    },
+    {
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Inline",
+      "defects": 8,
+      "denominator": 128985,
+      "rate": 0.01,
+      "share": 0.06
+    },
+    {
+      "defectDescription": "Color Shading",
+      "inspectionStage": "Pre Final",
+      "defects": 7,
+      "denominator": 2973,
+      "rate": 0.24,
+      "share": 0.05
+    },
+    {
+      "defectDescription": "Printing  - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.05
+    },
+    {
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.05
+    },
+    {
+      "defectDescription": "Waist Width Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 7,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.05
+    },
+    {
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 7,
+      "denominator": 2973,
+      "rate": 0.24,
+      "share": 0.05
+    },
+    {
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Inline",
+      "defects": 6,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Endline",
+      "defects": 6,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Heat Transfer- All Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 5,
+      "denominator": 2973,
+      "rate": 0.17,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Needle Marks  (by repairing)",
+      "inspectionStage": "Final",
+      "defects": 5,
+      "denominator": 12951,
+      "rate": 0.04,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Open Seam",
+      "inspectionStage": "Third Party",
+      "defects": 5,
+      "denominator": 10994,
+      "rate": 0.05,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Other Fabric Defects",
+      "inspectionStage": "Final",
+      "defects": 5,
+      "denominator": 12951,
+      "rate": 0.04,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Run off stitches/ Uncover seam",
+      "inspectionStage": "Endline",
+      "defects": 5,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Endline",
+      "defects": 5,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Vent defects",
+      "inspectionStage": "Inline",
+      "defects": 5,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.04
+    },
+    {
+      "defectDescription": "Body Length Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.03
+    },
+    {
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Endline",
+      "defects": 4,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.03
+    },
+    {
+      "defectDescription": "Leg opening / Hem Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.03
+    },
+    {
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 4,
+      "denominator": 2973,
+      "rate": 0.13,
+      "share": 0.03
+    },
+    {
+      "defectDescription": "Out seam / Inseam Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 4,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.03
+    },
+    {
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Final",
+      "defects": 4,
+      "denominator": 12951,
+      "rate": 0.03,
+      "share": 0.03
+    },
+    {
+      "defectDescription": "Body Length Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Glue Mark",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 12951,
+      "rate": 0.02,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Other  Measurements  Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 3,
+      "denominator": 2973,
+      "rate": 0.1,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Other Stain defects",
+      "inspectionStage": "Final",
+      "defects": 3,
+      "denominator": 12951,
+      "rate": 0.02,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Out seam / Inseam Out of Tolerance",
+      "inspectionStage": "Endline",
+      "defects": 3,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Snagging",
+      "inspectionStage": "Inline",
+      "defects": 3,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.02
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 2973,
+      "rate": 0.07,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Button/ Button Hole defects",
+      "inspectionStage": "Third Party",
+      "defects": 2,
+      "denominator": 10994,
+      "rate": 0.02,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Dirty Mark",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 2973,
+      "rate": 0.07,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Heat Transfer- All Defects",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Final",
+      "defects": 2,
+      "denominator": 12951,
+      "rate": 0.02,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Hole (by Trimming/ by blunt needle)",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 2973,
+      "rate": 0.07,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "inspectionStage": "Pre Final",
+      "defects": 2,
+      "denominator": 2973,
+      "rate": 0.07,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Snagging",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Thread Tension defects",
+      "inspectionStage": "Endline",
+      "defects": 2,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Asymmetry on left and right",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 12951,
+      "rate": 0.01,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Body Width Out of Tolerance",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 2973,
+      "rate": 0.03,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Chalk/ Pen Mark",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 12951,
+      "rate": 0.01,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Color Migration",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Crooked/ Exposed raw edge",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 2973,
+      "rate": 0.03,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 2973,
+      "rate": 0.03,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Embroidery - All Defects",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 12951,
+      "rate": 0.01,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Foreign Yarn / Slub / Knot",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Neck/ Collar Out of Tolerance",
+      "inspectionStage": "Inline",
+      "defects": 1,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Sleeve length Out of Tolerance / Uneven Sleeve Length",
+      "inspectionStage": "Final",
+      "defects": 1,
+      "denominator": 12951,
+      "rate": 0.01,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Un-trim thread",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 2973,
+      "rate": 0.03,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 2973,
+      "rate": 0.03,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "inspectionStage": "Pre Final",
+      "defects": 1,
+      "denominator": 2973,
+      "rate": 0.03,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Zipper Defects",
+      "inspectionStage": "Third Party",
+      "defects": 1,
+      "denominator": 10994,
+      "rate": 0.01,
+      "share": 0.01
+    },
+    {
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Inline",
+      "defects": 0,
+      "denominator": 128985,
+      "rate": 0,
+      "share": 0
+    },
+    {
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Final",
+      "defects": 0,
+      "denominator": 12951,
+      "rate": 0,
+      "share": 0
+    },
+    {
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Endline",
+      "defects": 0,
+      "denominator": 212051,
+      "rate": 0,
+      "share": 0
+    },
+    {
+      "defectDescription": "Unknown Defect",
+      "inspectionStage": "Pre Final",
+      "defects": 0,
+      "denominator": 2973,
+      "rate": 0,
+      "share": 0
+    }
+  ],
+  "totals": {
+    "defectQty": 13944,
+    "byStage": {
+      "Endline": 9918,
+      "Inline": 3391,
+      "Third Party": 367,
+      "Final": 194,
+      "Pre Final": 74
+    },
+    "denominatorByStage": {
+      "Endline": 212051,
+      "Inline": 128985,
+      "Third Party": 10994,
+      "Final": 12951,
+      "Pre Final": 2973
+    }
+  },
+  "meta": {
+    "rowCount": 5850,
+    "appliedFilters": {
+      "customer": "Travis Mathew",
+      "factory": "G3",
+      "startDate": "2026-01-01",
+      "endDate": "2026-06-30",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": []
+    },
+    "generatedAt": "2026-06-22T07:29:20.915Z"
+  }
+}
