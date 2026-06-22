@@ -14,10 +14,18 @@ dotenv.config();
 
 const app = express();
 const port = Number(process.env.PORT ?? 4000);
+const configuredCorsOrigins = (process.env.CORS_ORIGINS ?? "")
+  .split(",")
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
 app.use(
   cors({
-    origin: [/^http:\/\/localhost:\d+$/, /^http:\/\/127\.0\.0\.1:\d+$/],
+    origin: [
+      /^http:\/\/localhost:\d+$/,
+      /^http:\/\/127\.0\.0\.1:\d+$/,
+      ...configuredCorsOrigins,
+    ],
     credentials: true,
   }),
 );
