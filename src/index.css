@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #102236;
+  background: #f4f8fb;
+  font-synthesis: none;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 24, 45, 0.04), transparent 320px),
+    #f4f8fb;
+}
+
+button,
+select,
+input {
+  font: inherit;
+}
+
+.recharts-cartesian-axis-tick-value {
+  font-size: 12px;
+  fill: #5f7795;
+}
+
+.recharts-default-legend {
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d7e3;
+  border-radius: 999px;
+}
