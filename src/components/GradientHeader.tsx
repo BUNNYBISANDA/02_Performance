@@ -17,7 +17,7 @@ export function GradientHeader({
 }) {
   const { filters, filterOptions, setFilter, latestRefreshDate, backendStatus } = useQualityFilters();
   const { openDrawer } = useDrawer();
-  const resolvedTitle = title ?? (filters.customer ? `2026 ${filters.customer} Quality Performance` : "2026 Quality Performance");
+  const resolvedTitle = title ?? (filters.customer ? `${filters.customer} - Quality Performance` : "Quality Performance");
   const refreshLabel = latestRefreshDate
     ? new Intl.DateTimeFormat("en-US", { month: "short", day: "2-digit", year: "numeric" }).format(new Date(latestRefreshDate))
     : "—";

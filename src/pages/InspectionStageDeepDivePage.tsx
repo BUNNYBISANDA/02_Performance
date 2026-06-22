@@ -47,6 +47,11 @@ const stageTitleMap: Record<InspectionStage, { donut: string; bar: string; inspe
   },
 };
 
+function getStageDeepDiveTitle(customer: string | undefined, stage: InspectionStage) {
+  if (!customer) return `${stage} Quality Deep Dive`;
+  return `${customer} - ${stage} Quality Deep Dive`;
+}
+
 export function InspectionStageDeepDivePage() {
   const { filters, filtersReady, filtersError, refetchFilters } = useQualityFilters();
   const [stage, setStage] = useState<InspectionStage>("Inline");
@@ -88,7 +93,7 @@ export function InspectionStageDeepDivePage() {
   return (
     <div id="stage-deep-dive-page" data-export-page="true" className="min-h-screen bg-[#f4f6fb]">
       <GradientHeader
-        title={`${stage} Quality Deep Dive`}
+        title={getStageDeepDiveTitle(filters.customer, stage)}
         eyebrow="Inspection Stage Deep Dive"
         pageExport={{ targetId: "stage-deep-dive-page", fileName: "O2_Inspection_Stage_Deep_Dive" }}
       />
