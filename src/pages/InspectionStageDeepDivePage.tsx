@@ -10,11 +10,14 @@ import { TrendChart } from "../components/TrendChart";
 import { GradientHeader } from "../components/GradientHeader";
 import { formatNumber, formatRate } from "../lib/format";
 import { useQualityFilters } from "../lib/filter-context";
+import { buildDashboardExportFilters, buildExportFileBase } from "../lib/exportFilters";
 import { STAGE_META } from "../lib/stageConfig";
 import { dashboardQueryKey, getStageDetail, mapStageTrendToChartData } from "../services/dashboardApi";
 import { useApiQuery } from "../hooks/useApiQuery";
 import type { InspectionStage } from "../lib/types";
 import { ExportMenu } from "../components/common/ExportMenu";
+import { ExcelExportButton } from "../components/common/ExcelExportButton";
+import type { ExcelColumn } from "../utils/exportExcel";
 
 const stageTitleMap: Record<InspectionStage, { donut: string; bar: string; inspected: string }> = {
   Inline: {
@@ -64,14 +67,23 @@ export function InspectionStageDeepDivePage() {
   const trend = useMemo(() => mapStageTrendToChartData(data?.trend ?? [], stage), [data?.trend, stage]);
   const topDefect = defects[0];
   const hasData = Boolean(kpi && (kpi.denominator > 0 || kpi.defects > 0 || defects.length > 0));
-  const csvRows = (data?.detailTable ?? []).map((row) => ({
-    "Defect Description": row.defectDescription,
-    "Defect Qty": row.defects,
-    [stageTitleMap[stage].inspected]: kpi?.denominator ?? 0,
-    "Defect Rate (%)": row.rate,
-    "Share (%)": row.share,
-    Status: row.status,
+  const excelColumns: ExcelColumn[] = [
+    { key: "defectDescription", header: "defect_desc_eng", width: 38, type: "text" },
+    { key: "defects", header: `${stage} Defect Qty`, width: 16, type: "number" },
+    { key: "denominator", header: stageTitleMap[stage].inspected, width: 20, type: "number" },
+    { key: "rate", header: `${stage} Defect Rate`, width: 14, type: "percent" },
+    { key: "share", header: "Share %", width: 12, type: "percent" },
+  ];
+  const excelRows = (data?.detailTable ?? []).map((row) => ({
+    defectDescription: row.defectDescription,
+    defects: row.defects,
+    denominator: kpi?.denominator ?? 0,
+    rate: row.rate,
+    share: row.share,
   }));
+  const excelTotalsRow = kpi
+    ? { defectDescription: "Total", defects: kpi.defects, denominator: kpi.denominator, rate: kpi.rate, share: 100 }
+    : undefined;
 
   return (
     <div id="stage-deep-dive-page" data-export-page="true" className="min-h-screen bg-[#f4f6fb]">
@@ -165,10 +177,14 @@ export function InspectionStageDeepDivePage() {
         <section id="stage-detail-table" className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-card">
           <div className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-3">
             <h2 className="font-display text-lg font-semibold text-slate-900">{stage} Detail Summary</h2>
-            <ExportMenu
-              targetId="stage-detail-table"
-              fileName={`O2_${stage.replace(/\s+/g, "_")}_Detail_Summary`}
-              csvRows={csvRows}
+            <ExcelExportButton
+              fileName={buildExportFileBase(`O2_${stage.replace(/\s+/g, "_")}_Detail_Summary`, filters)}
+              sheetName={`${stage} Detail Summary`}
+              title={`${stage} Detail Summary`}
+              filters={buildDashboardExportFilters(filters, { "Selected Stage": stage })}
+              columns={excelColumns}
+              rows={excelRows}
+              totalsRow={excelTotalsRow}
             />
           </div>
           <div data-export-expandable="true" className="max-h-[320px] overflow-auto">

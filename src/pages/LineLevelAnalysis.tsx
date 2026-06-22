@@ -5,13 +5,15 @@ import { PowerBIPageShell } from "../components/PowerBIPageShell";
 import { DashboardError, DashboardLoading, DashboardUpdateStatus } from "../components/ApiState";
 import { formatRate } from "../lib/format";
 import { useQualityFilters } from "../lib/filter-context";
+import { buildDashboardExportFilters, buildExportFileBase } from "../lib/exportFilters";
 import { INSPECTION_STAGES, STAGE_META } from "../lib/stageConfig";
 import { dashboardQueryKey, getLineAnalysis } from "../services/dashboardApi";
 import { useApiQuery } from "../hooks/useApiQuery";
 import type { LineDefectDetailRow } from "../types/api";
 import type { InspectionStage } from "../lib/types";
 import { useMemo } from "react";
-import { ExportMenu } from "../components/common/ExportMenu";
+import { ExcelExportButton } from "../components/common/ExcelExportButton";
+import type { ExcelColumn } from "../utils/exportExcel";
 
 type PivotedLineDefect = {
   defect: string;
@@ -77,14 +79,27 @@ export function LineLevelAnalysis() {
   const chartRows = data?.lineLevelDefectRates ?? [];
   const lineDefects = buildLineDefectRows(data?.lineDefectDetailTable ?? []);
   const totalRates = totalRatesByStage(data?.lineDefectDetailTable ?? []);
-  const csvRows = (data?.lineDefectDetailTable ?? []).map((row) => ({
-    "Line Number": row.line,
-    "Defect Description": row.defectDescription,
-    "Inspection Stage": row.inspectionStage,
-    "Defect Qty": row.defects,
-    Denominator: row.denominator,
-    "Defect Rate (%)": row.rate,
+  const excelColumns: ExcelColumn[] = [
+    { key: "line", header: "fac-line", width: 16, type: "text" },
+    { key: "topDefect", header: "Main Defect", width: 32, type: "text" },
+    ...INSPECTION_STAGES.map((stage) => ({
+      key: stage,
+      header: `${stage} Defect Rate`,
+      width: 16,
+      type: "percent" as const,
+    })),
+    { key: "status", header: "Overall Risk Level", width: 16, type: "text" },
+  ];
+  const excelRows = chartRows.map((row) => ({
+    line: row.line,
+    topDefect: row.topDefect ?? "",
+    ...INSPECTION_STAGES.reduce<Record<string, number>>((result, stage) => {
+      result[stage] = Number(row[stage] ?? 0);
+      return result;
+    }, {}),
+    status: row.status,
   }));
+  const excelTotalsRow = { line: "Total", topDefect: "", ...totalRates, status: "" };
 
   return (
     <PowerBIPageShell
@@ -110,10 +125,14 @@ export function LineLevelAnalysis() {
                 <h2 className="font-display text-lg font-semibold text-slate-900">
                   Line-Level Defect Detail Based on Selection
                 </h2>
-                <ExportMenu
-                  targetId="line-level-detail-table"
-                  fileName="O2_Line_Level_Defect_Detail"
-                  csvRows={csvRows}
+                <ExcelExportButton
+                  fileName={buildExportFileBase("O2_Line_Level_Defect_Detail", filters)}
+                  sheetName="Line-Level Defect Detail"
+                  title="Line-Level Defect Detail Based on Selection"
+                  filters={buildDashboardExportFilters(filters)}
+                  columns={excelColumns}
+                  rows={excelRows}
+                  totalsRow={excelTotalsRow}
                 />
               </div>
               <div data-export-expandable="true" className="max-h-[330px] overflow-auto">

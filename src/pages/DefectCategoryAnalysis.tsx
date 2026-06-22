@@ -4,11 +4,13 @@ import { PowerBIPageShell } from "../components/PowerBIPageShell";
 import { DashboardError, DashboardLoading, DashboardUpdateStatus } from "../components/ApiState";
 import { formatNumber } from "../lib/format";
 import { useQualityFilters } from "../lib/filter-context";
+import { buildDashboardExportFilters, buildExportFileBase } from "../lib/exportFilters";
 import { INSPECTION_STAGES, STAGE_META } from "../lib/stageConfig";
 import { dashboardQueryKey, getDefectCategories } from "../services/dashboardApi";
 import { useApiQuery } from "../hooks/useApiQuery";
 import { useMemo } from "react";
-import { ExportMenu } from "../components/common/ExportMenu";
+import { ExcelExportButton } from "../components/common/ExcelExportButton";
+import type { ExcelColumn } from "../utils/exportExcel";
 
 export function DefectCategoryAnalysis() {
   const { filters, filtersReady, filtersError, refetchFilters } = useQualityFilters();
@@ -25,14 +27,28 @@ export function DefectCategoryAnalysis() {
     acc[stage] = Number(data?.totals.byStage[stage] ?? 0);
     return acc;
   }, {});
-  const csvRows = chartRows.map((row) => ({
-    "Defect Description": row.name,
+  const grandTotalQty = INSPECTION_STAGES.reduce((sum, stage) => sum + (totalRow[stage] ?? 0), 0);
+  const excelColumns: ExcelColumn[] = [
+    { key: "name", header: "Defect Category", width: 38, type: "text" },
+    ...INSPECTION_STAGES.map((stage) => ({
+      key: stage,
+      header: `${stage} Defect Qty`,
+      width: 16,
+      type: "number" as const,
+    })),
+    { key: "total", header: "Total Qty", width: 14, type: "number" },
+    { key: "share", header: "Share %", width: 12, type: "percent" },
+  ];
+  const excelRows = chartRows.map((row) => ({
+    name: row.name,
     ...INSPECTION_STAGES.reduce<Record<string, number>>((result, stage) => {
-      result[`${stage} Defect Qty`] = Number(row[stage] ?? 0);
+      result[stage] = Number(row[stage] ?? 0);
       return result;
     }, {}),
-    "Total Defect Qty": Number(row.total ?? 0),
+    total: Number(row.total ?? 0),
+    share: grandTotalQty ? (Number(row.total ?? 0) / grandTotalQty) * 100 : 0,
   }));
+  const excelTotalsRow = { name: "Total", ...totalRow, total: grandTotalQty, share: 100 };
 
   return (
     <PowerBIPageShell
@@ -56,10 +72,14 @@ export function DefectCategoryAnalysis() {
             <section id="defect-category-detail-table" className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-card">
               <div className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-3">
                 <h2 className="font-display text-lg font-semibold text-slate-900">Defect Category Detail Summary</h2>
-                <ExportMenu
-                  targetId="defect-category-detail-table"
-                  fileName="O2_Defect_Category_Detail_Summary"
-                  csvRows={csvRows}
+                <ExcelExportButton
+                  fileName={buildExportFileBase("O2_Defect_Category_Detail", filters)}
+                  sheetName="Defect Category Detail"
+                  title="Defect Category Detail Summary"
+                  filters={buildDashboardExportFilters(filters)}
+                  columns={excelColumns}
+                  rows={excelRows}
+                  totalsRow={excelTotalsRow}
                 />
               </div>
               <div data-export-expandable="true" className="max-h-[310px] overflow-auto">

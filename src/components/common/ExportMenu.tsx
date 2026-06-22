@@ -2,14 +2,12 @@ import {
   ChevronDown,
   Download,
   Eye,
-  FileSpreadsheet,
   FileText,
   Image,
   Loader2,
   Maximize2,
 } from "lucide-react";
 import { useRef, useState, type ReactNode } from "react";
-import { exportRowsAsCsv, type CsvRow } from "../../utils/exportCsv";
 import {
   exportElementAsPdf,
   exportElementAsPng,
@@ -17,7 +15,7 @@ import {
   type PdfOptions,
 } from "../../utils/exportVisuals";
 
-type ExportFormat = "png" | "pdf" | "csv";
+type ExportFormat = "png" | "pdf";
 
 function MenuOption({
   icon,
@@ -49,7 +47,6 @@ export function ExportMenu({
   allowPng = true,
   allowPdf = true,
   allowVisiblePdf = false,
-  csvRows,
   variant = "light",
   pageLevel = false,
   pdfOrientation = "auto",
@@ -59,7 +56,6 @@ export function ExportMenu({
   allowPng?: boolean;
   allowPdf?: boolean;
   allowVisiblePdf?: boolean;
-  csvRows?: CsvRow[];
   variant?: "light" | "dark";
   pageLevel?: boolean;
   pdfOrientation?: PdfOptions["orientation"];
@@ -78,13 +74,11 @@ export function ExportMenu({
 
       if (format === "png") {
         await exportElementAsPng(targetId, modeFileName, { mode });
-      } else if (format === "pdf") {
+      } else {
         await exportElementAsPdf(targetId, modeFileName, {
           mode,
           orientation: pdfOrientation,
         });
-      } else {
-        exportRowsAsCsv(csvRows ?? [], fileName);
       }
     } catch (error) {
       if (import.meta.env.DEV) console.error("Dashboard export failed", error);
@@ -161,18 +155,6 @@ export function ExportMenu({
               label="Export full PDF"
               disabled={isExporting}
               onClick={() => void runExport("pdf", "full")}
-            />
-          </>
-        )}
-
-        {csvRows && (
-          <>
-            <div className="my-1 border-t border-slate-100" />
-            <MenuOption
-              icon={<FileSpreadsheet className="h-3.5 w-3.5" />}
-              label="Export CSV"
-              disabled={isExporting}
-              onClick={() => void runExport("csv")}
             />
           </>
         )}
