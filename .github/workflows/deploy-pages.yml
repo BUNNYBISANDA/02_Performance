@@ -32,13 +32,19 @@ jobs:
         run: npm ci
 
       - name: Check backend URL configuration
-        if: ${{ vars.VITE_API_BASE_URL == '' }}
-        run: echo "::warning::VITE_API_BASE_URL is not configured; the published frontend will not load dashboard data until this repository variable is set."
+        # Unset/empty VITE_DATA_MODE defaults to "static" (demo data) in production, which
+        # needs no backend URL, so only warn when "api" mode is explicitly requested without one.
+        if: ${{ vars.VITE_DATA_MODE == 'api' && vars.VITE_API_BASE_URL == '' }}
+        run: echo "::warning::VITE_DATA_MODE=api but VITE_API_BASE_URL is not configured; the published frontend will show a 'Backend URL is not configured' error until the VITE_API_BASE_URL repository variable is set."
 
       - name: Build frontend
         run: npm run build
         env:
           VITE_API_BASE_URL: ${{ vars.VITE_API_BASE_URL }}
+          # Leave VITE_DATA_MODE unset (no repository variable) to use the static demo
+          # data baked into public/data/. Set it to "api" once a real backend is deployed
+          # and VITE_API_BASE_URL above points at it.
+          VITE_DATA_MODE: ${{ vars.VITE_DATA_MODE }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

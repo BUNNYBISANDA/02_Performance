@@ -1,0 +1,264 @@
+{
+  "stage": "Inline",
+  "selectedStageKpiSummary": {
+    "stage": "Inline",
+    "defects": 1418,
+    "denominator": 68460,
+    "rate": 2.07,
+    "target": 3.5,
+    "status": "Good",
+    "activeSoCount": 22,
+    "activeLineCount": 8
+  },
+  "donutValues": [
+    {
+      "name": "Inline Defect Qty",
+      "value": 1418,
+      "color": "#00AEEF"
+    },
+    {
+      "name": "Passed Process Checks",
+      "value": 67042,
+      "color": "#CBD5E1"
+    }
+  ],
+  "topDefects": [
+    {
+      "name": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 420,
+      "rate": 0.61,
+      "share": 29.62,
+      "status": "Critical"
+    },
+    {
+      "name": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 277,
+      "rate": 0.4,
+      "share": 19.53,
+      "status": "Critical"
+    },
+    {
+      "name": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "defects": 183,
+      "rate": 0.27,
+      "share": 12.91,
+      "status": "Watch"
+    },
+    {
+      "name": "Open Seam",
+      "defects": 129,
+      "rate": 0.19,
+      "share": 9.1,
+      "status": "Good"
+    },
+    {
+      "name": "Asymmetry on left and right",
+      "defects": 122,
+      "rate": 0.18,
+      "share": 8.6,
+      "status": "Good"
+    },
+    {
+      "name": "Skip stitching",
+      "defects": 96,
+      "rate": 0.14,
+      "share": 6.77,
+      "status": "Good"
+    },
+    {
+      "name": "Broken Stitch",
+      "defects": 60,
+      "rate": 0.09,
+      "share": 4.23,
+      "status": "Good"
+    },
+    {
+      "name": "Oil Stain",
+      "defects": 58,
+      "rate": 0.08,
+      "share": 4.09,
+      "status": "Good"
+    },
+    {
+      "name": "Color Shading",
+      "defects": 18,
+      "rate": 0.03,
+      "share": 1.27,
+      "status": "Good"
+    },
+    {
+      "name": "Zipper Defects",
+      "defects": 18,
+      "rate": 0.03,
+      "share": 1.27,
+      "status": "Good"
+    }
+  ],
+  "trend": [
+    {
+      "weekStart": "2026-04-27",
+      "isoWeek": "2026-W18",
+      "weekNumber": 18,
+      "month": "Apr",
+      "inline": 0.44,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-04",
+      "isoWeek": "2026-W19",
+      "weekNumber": 19,
+      "month": "May",
+      "inline": 0.84,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-11",
+      "isoWeek": "2026-W20",
+      "weekNumber": 20,
+      "month": "May",
+      "inline": 1.35,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-18",
+      "isoWeek": "2026-W21",
+      "weekNumber": 21,
+      "month": "May",
+      "inline": 0.85,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-25",
+      "isoWeek": "2026-W22",
+      "weekNumber": 22,
+      "month": "May",
+      "inline": 0.32,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-01",
+      "isoWeek": "2026-W23",
+      "weekNumber": 23,
+      "month": "Jun",
+      "inline": 0.24,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0,
+      "thirdParty": 0
+    }
+  ],
+  "detailTable": [
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 420,
+      "denominator": 68460,
+      "rate": 0.61,
+      "share": 29.62,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 277,
+      "denominator": 68460,
+      "rate": 0.4,
+      "share": 19.53,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "defects": 183,
+      "denominator": 68460,
+      "rate": 0.27,
+      "share": 12.91,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Open Seam",
+      "defects": 129,
+      "denominator": 68460,
+      "rate": 0.19,
+      "share": 9.1,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Asymmetry on left and right",
+      "defects": 122,
+      "denominator": 68460,
+      "rate": 0.18,
+      "share": 8.6,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Skip stitching",
+      "defects": 96,
+      "denominator": 68460,
+      "rate": 0.14,
+      "share": 6.77,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "defects": 60,
+      "denominator": 68460,
+      "rate": 0.09,
+      "share": 4.23,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Oil Stain",
+      "defects": 58,
+      "denominator": 68460,
+      "rate": 0.08,
+      "share": 4.09,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Color Shading",
+      "defects": 18,
+      "denominator": 68460,
+      "rate": 0.03,
+      "share": 1.27,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Zipper Defects",
+      "defects": 18,
+      "denominator": 68460,
+      "rate": 0.03,
+      "share": 1.27,
+      "status": "Good"
+    }
+  ],
+  "meta": {
+    "rowCount": 819,
+    "appliedFilters": {
+      "customer": "Travis Mathew",
+      "factory": "G3",
+      "startDate": "2026-05-01",
+      "endDate": "2026-06-04",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": [
+        "Inline"
+      ]
+    },
+    "generatedAt": "2026-06-22T06:54:33.297Z"
+  }
+}

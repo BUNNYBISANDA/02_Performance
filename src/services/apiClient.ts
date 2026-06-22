@@ -1,8 +1,69 @@
-const configuredApiBaseUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)
+const PLACEHOLDER_BACKEND_URL_PATTERN = /YOUR_DEPLOYED_BACKEND_URL/i;
+
+const rawApiBaseUrl = (import.meta.env.VITE_API_BASE_URL as string | undefined)
   ?.trim()
   .replace(/\/$/, "");
 
-export const API_BASE_URL = configuredApiBaseUrl || "http://localhost:4000/api";
+const isPlaceholderUrl = Boolean(rawApiBaseUrl && PLACEHOLDER_BACKEND_URL_PATTERN.test(rawApiBaseUrl));
+const isConfigured = Boolean(rawApiBaseUrl) && !isPlaceholderUrl;
+
+// In dev, fall back to the local backend so `npm run dev` works without a .env file.
+// In production there is no safe fallback: defaulting to localhost would silently point
+// the deployed site at the visitor's own machine instead of surfacing a real error.
+export const BACKEND_CONFIGURED = isConfigured || import.meta.env.DEV;
+
+export const API_BASE_URL = isConfigured
+  ? rawApiBaseUrl!
+  : import.meta.env.DEV
+    ? "http://localhost:4000/api"
+    : "(not configured)";
+
+const BACKEND_NOT_CONFIGURED_MESSAGE = "Backend URL is not configured.";
+
+// This app always reads live data. VITE_USE_MOCK_DATA exists only so deployments can
+// assert mock mode is off; there is no mock implementation to switch to.
+const mockDataRequested =
+  (import.meta.env.VITE_USE_MOCK_DATA as string | undefined)?.trim().toLowerCase() === "true";
+const MOCK_DATA_UNSUPPORTED_MESSAGE =
+  "VITE_USE_MOCK_DATA=true was set, but this app has no mock data implementation. Set it to false and configure VITE_API_BASE_URL instead.";
+
+export type DataMode = "api" | "static";
+
+const rawDataMode = (import.meta.env.VITE_DATA_MODE as string | undefined)?.trim().toLowerCase();
+
+// GitHub Pages can't run the Node.js backend, so production defaults to the static
+// JSON snapshot unless explicitly switched back to "api" (e.g. once a real backend is
+// deployed, set the VITE_DATA_MODE repository variable to "api" alongside
+// VITE_API_BASE_URL). Local dev defaults to "api" to talk to the local backend.
+export const DATA_MODE: DataMode =
+  rawDataMode === "api" ? "api" : rawDataMode === "static" ? "static" : import.meta.env.DEV ? "api" : "static";
+
+// import.meta.env.BASE_URL already matches whatever `base` is configured in
+// vite.config.ts (e.g. "/O2_Performance/" in production, "/" in dev), so this self-corrects
+// even if VITE_STATIC_DATA_BASE_URL is left unset or pointed at the wrong path.
+const rawStaticDataBaseUrl = (import.meta.env.VITE_STATIC_DATA_BASE_URL as string | undefined)?.trim().replace(/\/$/, "");
+export const STATIC_DATA_BASE_URL = rawStaticDataBaseUrl || `${import.meta.env.BASE_URL}data`.replace(/\/{2,}/g, "/");
+
+if (DATA_MODE === "static") {
+  // Per spec: this is a console-only note, not a dashboard UI element.
+  console.info("Static demo data mode is active.");
+}
+
+const STATIC_FILE_BY_PATH: Record<string, string> = {
+  "/filters": "filters.json",
+  "/overview": "overview.json",
+  "/weekly-trend": "weekly-trend.json",
+  "/defect-categories": "defect-categories.json",
+  "/line-analysis": "line-analysis.json",
+};
+
+const STAGE_STATIC_FILE: Record<string, string> = {
+  Inline: "stage-detail-inline.json",
+  Endline: "stage-detail-endline.json",
+  "Pre Final": "stage-detail-pre-final.json",
+  Final: "stage-detail-final.json",
+  "Third Party": "stage-detail-third-party.json",
+};
 
 type QueryValue = string | number | boolean | string[] | number[] | null | undefined;
 
@@ -44,41 +105,25 @@ const buildQueryString = (params?: QueryParams) => {
   return query ? `?${query}` : "";
 };
 
-export const getJson = async <T>(
-  path: string,
-  params?: QueryParams,
-  options: RequestOptions = {},
-): Promise<T> => {
-  const url = `${API_BASE_URL}${path.startsWith("/") ? path : `/${path}`}${buildQueryString(params)}`;
-  const startedAt = performance.now();
-
-  if (import.meta.env.DEV) {
-    console.debug("[api] request", { endpoint: path, params: params ?? {} });
+const resolveStaticFileName = (normalizedPath: string, params?: QueryParams): string | null => {
+  if (normalizedPath === "/stage-detail") {
+    const stage = typeof params?.stage === "string" ? params.stage : undefined;
+    return (stage && STAGE_STATIC_FILE[stage]) || null;
   }
+  return STATIC_FILE_BY_PATH[normalizedPath] ?? null;
+};
 
+const fetchJson = async <T>(url: string, notConnectableMessage: string, signal?: AbortSignal): Promise<T> => {
   let response: Response;
   try {
-    response = await fetch(url, { signal: options.signal });
+    response = await fetch(url, { signal });
   } catch (error) {
-    if (options.signal?.aborted || (error instanceof DOMException && error.name === "AbortError")) {
-      if (import.meta.env.DEV) {
-        console.debug("[api] cancelled", {
-          endpoint: path,
-          durationMs: Math.round(performance.now() - startedAt),
-        });
-      }
-      throw error;
-    }
-
-    throw new ApiError(
-      `Unable to connect to backend at ${API_BASE_URL}.`,
-      undefined,
-      url,
-    );
+    if (signal?.aborted || (error instanceof DOMException && error.name === "AbortError")) throw error;
+    throw new ApiError(notConnectableMessage, undefined, url);
   }
 
   if (!response.ok) {
-    let message = `API request failed with status ${response.status}.`;
+    let message = `Request failed with status ${response.status}.`;
     try {
       const body = (await response.json()) as { message?: string; error?: string };
       message = body.message ?? body.error ?? message;
@@ -86,17 +131,41 @@ export const getJson = async <T>(
       const text = await response.text().catch(() => "");
       if (text) message = text;
     }
-
     throw new ApiError(message, response.status, url);
   }
 
-  if (import.meta.env.DEV) {
-    console.debug("[api] response", {
-      endpoint: path,
-      status: response.status,
-      durationMs: Math.round(performance.now() - startedAt),
-    });
+  return response.json() as Promise<T>;
+};
+
+export const getJson = async <T>(
+  path: string,
+  params?: QueryParams,
+  options: RequestOptions = {},
+): Promise<T> => {
+  const normalizedPath = path.startsWith("/") ? path : `/${path}`;
+
+  if (DATA_MODE === "static") {
+    const fileName = resolveStaticFileName(normalizedPath, params);
+    if (!fileName) throw new ApiError(`No static demo data file is mapped for ${normalizedPath}.`);
+
+    const url = `${STATIC_DATA_BASE_URL}/${fileName}`;
+    if (import.meta.env.DEV) console.debug("[static-data] request", { endpoint: normalizedPath, url });
+    return fetchJson<T>(url, `Unable to load static demo data file: ${fileName}.`, options.signal);
   }
 
-  return response.json() as Promise<T>;
+  if (mockDataRequested) throw new ApiError(MOCK_DATA_UNSUPPORTED_MESSAGE);
+  if (!BACKEND_CONFIGURED) throw new ApiError(BACKEND_NOT_CONFIGURED_MESSAGE);
+
+  const url = `${API_BASE_URL}${normalizedPath}${buildQueryString(params)}`;
+  const startedAt = performance.now();
+
+  if (import.meta.env.DEV) console.debug("[api] request", { endpoint: path, params: params ?? {} });
+
+  const result = await fetchJson<T>(url, `Unable to connect to backend at ${API_BASE_URL}.`, options.signal);
+
+  if (import.meta.env.DEV) {
+    console.debug("[api] response", { endpoint: path, durationMs: Math.round(performance.now() - startedAt) });
+  }
+
+  return result;
 };

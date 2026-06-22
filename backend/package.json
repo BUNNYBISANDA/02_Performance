@@ -9,7 +9,8 @@
     "start": "node dist/server.js",
     "migrate": "tsx src/db/migrate.ts",
     "import:excel": "tsx src/import/importExcel.ts",
-    "refresh:views": "tsx src/db/refreshMaterializedViews.ts"
+    "refresh:views": "tsx src/db/refreshMaterializedViews.ts",
+    "export:static": "tsx src/scripts/exportStaticData.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",

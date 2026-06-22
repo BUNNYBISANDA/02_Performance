@@ -1,0 +1,253 @@
+{
+  "stage": "Final",
+  "selectedStageKpiSummary": {
+    "stage": "Final",
+    "defects": 55,
+    "denominator": 3876,
+    "rate": 1.42,
+    "target": 0.7,
+    "status": "Critical",
+    "activeSoCount": 16,
+    "activeLineCount": 9
+  },
+  "donutValues": [
+    {
+      "name": "Final Defect Qty",
+      "value": 55,
+      "color": "#7C3AED"
+    },
+    {
+      "name": "Passed Garments",
+      "value": 3821,
+      "color": "#CBD5E1"
+    }
+  ],
+  "topDefects": [
+    {
+      "name": "Dirty Mark",
+      "defects": 16,
+      "rate": 0.41,
+      "share": 29.09,
+      "status": "Critical"
+    },
+    {
+      "name": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 9,
+      "rate": 0.23,
+      "share": 16.36,
+      "status": "Watch"
+    },
+    {
+      "name": "Oil Stain",
+      "defects": 8,
+      "rate": 0.21,
+      "share": 14.55,
+      "status": "Watch"
+    },
+    {
+      "name": "Color Shading",
+      "defects": 3,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "name": "Needle Marks  (by repairing)",
+      "defects": 3,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "name": "Other Sewing/ Ironing Defects",
+      "defects": 3,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "name": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 3,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "name": "Broken Stitch",
+      "defects": 2,
+      "rate": 0.05,
+      "share": 3.64,
+      "status": "Good"
+    },
+    {
+      "name": "Other Fabric Defects",
+      "defects": 2,
+      "rate": 0.05,
+      "share": 3.64,
+      "status": "Good"
+    },
+    {
+      "name": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "defects": 2,
+      "rate": 0.05,
+      "share": 3.64,
+      "status": "Good"
+    }
+  ],
+  "trend": [
+    {
+      "weekStart": "2026-05-04",
+      "isoWeek": "2026-W19",
+      "weekNumber": 19,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.96,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-11",
+      "isoWeek": "2026-W20",
+      "weekNumber": 20,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0.75,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-18",
+      "isoWeek": "2026-W21",
+      "weekNumber": 21,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 1.75,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-05-25",
+      "isoWeek": "2026-W22",
+      "weekNumber": 22,
+      "month": "May",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 2.07,
+      "thirdParty": 0
+    },
+    {
+      "weekStart": "2026-06-01",
+      "isoWeek": "2026-W23",
+      "weekNumber": 23,
+      "month": "Jun",
+      "inline": 0,
+      "endline": 0,
+      "preFinal": 0,
+      "final": 0.82,
+      "thirdParty": 0
+    }
+  ],
+  "detailTable": [
+    {
+      "defectDescription": "Dirty Mark",
+      "defects": 16,
+      "denominator": 3876,
+      "rate": 0.41,
+      "share": 29.09,
+      "status": "Critical"
+    },
+    {
+      "defectDescription": "Placket- Pleated/ Slanted/ Exposed",
+      "defects": 9,
+      "denominator": 3876,
+      "rate": 0.23,
+      "share": 16.36,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Oil Stain",
+      "defects": 8,
+      "denominator": 3876,
+      "rate": 0.21,
+      "share": 14.55,
+      "status": "Watch"
+    },
+    {
+      "defectDescription": "Color Shading",
+      "defects": 3,
+      "denominator": 3876,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Needle Marks  (by repairing)",
+      "defects": 3,
+      "denominator": 3876,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Other Sewing/ Ironing Defects",
+      "defects": 3,
+      "denominator": 3876,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Uneven (Seam / Piping / Tape /Rib)",
+      "defects": 3,
+      "denominator": 3876,
+      "rate": 0.08,
+      "share": 5.45,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Broken Stitch",
+      "defects": 2,
+      "denominator": 3876,
+      "rate": 0.05,
+      "share": 3.64,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Other Fabric Defects",
+      "defects": 2,
+      "denominator": 3876,
+      "rate": 0.05,
+      "share": 3.64,
+      "status": "Good"
+    },
+    {
+      "defectDescription": "Wavy/ Puckering/ Roping/ Twisted/ Fullness",
+      "defects": 2,
+      "denominator": 3876,
+      "rate": 0.05,
+      "share": 3.64,
+      "status": "Good"
+    }
+  ],
+  "meta": {
+    "rowCount": 58,
+    "appliedFilters": {
+      "customer": "Travis Mathew",
+      "factory": "G3",
+      "startDate": "2026-05-01",
+      "endDate": "2026-06-04",
+      "soNumbers": [],
+      "styles": [],
+      "lines": [],
+      "defectDescriptions": [],
+      "inspectionStages": [
+        "Final"
+      ]
+    },
+    "generatedAt": "2026-06-22T06:54:33.307Z"
+  }
+}
