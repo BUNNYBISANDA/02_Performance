@@ -41,7 +41,13 @@ export function WeeklyTrendAnalysis() {
       ) : (
         <>
           <DashboardUpdateStatus isUpdating={isUpdating} error={error} onRetry={retry} />
-          <WeeklyStageTrendChart data={rows} highlights={[]} viewBy={viewBy} onViewByChange={setViewBy} />
+          <WeeklyStageTrendChart
+            data={rows}
+            highlights={[]}
+            viewBy={viewBy}
+            onViewByChange={setViewBy}
+            selectedInspectionCategories={filters.inspectionCategories}
+          />
         </>
       )}
     </PowerBIPageShell>

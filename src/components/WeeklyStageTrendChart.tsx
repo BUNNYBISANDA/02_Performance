@@ -10,8 +10,10 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { useState } from "react";
-import { formatRate } from "../lib/format";
+import { useMemo, useState } from "react";
+import { buildNicePercentTicks, formatPercentTick, formatRate } from "../lib/format";
+import { getVisibleStageTargets } from "../lib/stageTargets";
+import type { InspectionStage } from "../lib/types";
 import type { WeeklyTrendItem } from "../types/api";
 import { ExportMenu } from "./common/ExportMenu";
 
@@ -19,17 +21,17 @@ type SeriesKey = "inline" | "endline" | "preFinal" | "final" | "thirdParty";
 
 type SeriesConfig = {
   key: SeriesKey;
+  stage: InspectionStage;
   label: string;
   color: string;
-  target: number;
 };
 
 const SERIES: SeriesConfig[] = [
-  { key: "inline", label: "Inline Defect Rate", color: "#1E90FF", target: 3.5 },
-  { key: "endline", label: "Endline Defect Rate", color: "#1428A0", target: 2.0 },
-  { key: "preFinal", label: "Pre Final Defect Rate", color: "#EA6A32", target: 1.2 },
-  { key: "final", label: "Final Defect Rate", color: "#7B168F", target: 0.7 },
-  { key: "thirdParty", label: "Third Party Defect Rate", color: "#E044A7", target: 0.5 },
+  { key: "inline", stage: "Inline", label: "Inline Defect Rate", color: "#1E90FF" },
+  { key: "endline", stage: "Endline", label: "Endline Defect Rate", color: "#1428A0" },
+  { key: "preFinal", stage: "Pre Final", label: "Pre Final Defect Rate", color: "#EA6A32" },
+  { key: "final", stage: "Final", label: "Final Defect Rate", color: "#7B168F" },
+  { key: "thirdParty", stage: "Third Party", label: "Third Party Defect Rate", color: "#E044A7" },
 ];
 
 type Highlight = { isoWeek: string; key: SeriesKey };
@@ -60,22 +62,70 @@ export function WeeklyStageTrendChart({
   highlights = [],
   viewBy = "weekly",
   onViewByChange,
+  selectedInspectionCategories = [],
 }: {
   data: WeeklyTrendItem[];
   highlights?: Highlight[];
   viewBy?: "weekly" | "daily";
   onViewByChange?: (viewBy: "weekly" | "daily") => void;
+  selectedInspectionCategories?: readonly InspectionStage[];
 }) {
   const [hoveredSeries, setHoveredSeries] = useState<SeriesKey | null>(null);
   const highlightLookup = new Set(highlights.map((item) => `${item.isoWeek}|${item.key}`));
   const xAxisKey = viewBy === "daily" ? "label" : "isoWeek";
+  const hoveredStage = hoveredSeries
+    ? SERIES.find((series) => series.key === hoveredSeries)?.stage ?? null
+    : null;
+
+  const selectedTargets = useMemo(
+    () => getVisibleStageTargets(selectedInspectionCategories),
+    [selectedInspectionCategories],
+  );
+
+  const selectedStages = useMemo(
+    () => new Set(selectedInspectionCategories),
+    [selectedInspectionCategories],
+  );
+
+  const hasStageFilter = selectedInspectionCategories.length > 0;
+  const visibleTargets = useMemo(() => {
+    if (!hoveredStage) return selectedTargets;
+    if (hasStageFilter && !selectedStages.has(hoveredStage)) return selectedTargets;
+
+    const hoveredTarget = selectedTargets.find((target) => target.stages.includes(hoveredStage));
+    return hoveredTarget
+      ? [{ ...hoveredTarget, label: `${hoveredStage} target ${hoveredTarget.value}%` }]
+      : selectedTargets;
+  }, [hasStageFilter, hoveredStage, selectedStages, selectedTargets]);
+
+  const { ticks: yAxisTicks, max: yAxisMax, decimals: yAxisDecimals } = useMemo(() => {
+    const maxValue = data.reduce((max, row) => {
+      const rowMax = SERIES.reduce((seriesMax, series) => {
+        const value = Number(row[series.key] ?? 0);
+        return Number.isFinite(value) ? Math.max(seriesMax, value) : seriesMax;
+      }, 0);
+      return Math.max(max, rowMax);
+    }, 0);
+    const maxTarget = visibleTargets.reduce((max, target) => Math.max(max, target.value), 0);
+    return buildNicePercentTicks(Math.max(maxValue, maxTarget));
+  }, [data, visibleTargets]);
 
   return (
     <div id="weekly-trend-chart" className="rounded-lg border border-slate-200 bg-white p-4 shadow-card transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lift">
       <div className="mb-3 flex items-start justify-between gap-3">
-        <h2 className="font-display text-lg font-semibold text-slate-900">
-          Weekly Defect Rate Trend by Inspection Stage
-        </h2>
+        <div>
+          <h2 className="font-display text-lg font-semibold text-slate-900">
+            Weekly Defect Rate Trend by Inspection Stage
+          </h2>
+          <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-[11px] font-semibold text-green-800">
+            {visibleTargets.map((target) => (
+              <span key={target.label} className="inline-flex items-center gap-1.5">
+                <span className="w-5 border-t border-dashed border-green-800" />
+                {target.label}
+              </span>
+            ))}
+          </div>
+        </div>
         <div className="flex items-center gap-2">
           {onViewByChange && (
             <label className="flex items-center gap-1.5 text-xs font-semibold text-slate-600">
@@ -112,7 +162,13 @@ export function WeeklyStageTrendChart({
               fontWeight: 700,
             }}
           />
-          <YAxis tickLine={false} axisLine={false} tickFormatter={(value) => `${Number(value).toFixed(0)}%`} />
+          <YAxis
+            tickLine={false}
+            axisLine={false}
+            domain={[0, yAxisMax]}
+            ticks={yAxisTicks}
+            tickFormatter={(value) => formatPercentTick(Number(value), yAxisDecimals)}
+          />
           <Tooltip
             formatter={(value) => formatRate(Number(value))}
             contentStyle={{
@@ -148,13 +204,19 @@ export function WeeklyStageTrendChart({
               </div>
             )}
           />
-          {SERIES.map((series, index) => (
+          {visibleTargets.map((target) => (
             <ReferenceLine
-              key={`${series.key}-target`}
-              y={series.target}
-              stroke="#E11D48"
-              strokeDasharray={index % 2 === 0 ? "6 5" : "2 5"}
-              strokeOpacity={hoveredSeries && hoveredSeries !== series.key ? 0.1 : 0.42}
+              key={target.value}
+              y={target.value}
+              stroke="#166534"
+              strokeDasharray="6 5"
+              strokeOpacity={0.72}
+              label={{
+                value: `${target.value}% target`,
+                position: "insideTopRight",
+                fill: "#166534",
+                fontSize: 10,
+              }}
             />
           ))}
           {SERIES.map((series) => (

@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { buildNicePercentTicks, formatPercentTick, formatRate } from "../lib/format";
 import { INSPECTION_STAGES, STAGE_META } from "../lib/stageConfig";
 import type { InspectionStage } from "../lib/types";
-import { getVisibleStageBaselines, STAGE_BASELINES } from "../lib/stageBaselines";
+import { getVisibleStageTargets } from "../lib/stageTargets";
 import { ExportMenu } from "./common/ExportMenu";
 
 type LineStageRateChartProps = {
@@ -14,8 +14,8 @@ type LineStageRateChartProps = {
 export function LineStageRateChart({ data, selectedInspectionCategories = [] }: LineStageRateChartProps) {
   const [hoveredStage, setHoveredStage] = useState<InspectionStage | null>(null);
 
-  const selectedBaselines = useMemo(
-    () => getVisibleStageBaselines(selectedInspectionCategories),
+  const selectedTargets = useMemo(
+    () => getVisibleStageTargets(selectedInspectionCategories),
     [selectedInspectionCategories],
   );
 
@@ -25,15 +25,15 @@ export function LineStageRateChart({ data, selectedInspectionCategories = [] }: 
   );
 
   const hasStageFilter = selectedInspectionCategories.length > 0;
-  const visibleBaselines = useMemo(() => {
-    if (!hoveredStage) return selectedBaselines;
-    if (hasStageFilter && !selectedStages.has(hoveredStage)) return selectedBaselines;
+  const visibleTargets = useMemo(() => {
+    if (!hoveredStage) return selectedTargets;
+    if (hasStageFilter && !selectedStages.has(hoveredStage)) return selectedTargets;
 
-    const hoveredBaseline = selectedBaselines.find((baseline) => baseline.stages.includes(hoveredStage));
-    return hoveredBaseline
-      ? [{ ...hoveredBaseline, label: `${hoveredStage} baseline ${hoveredBaseline.value}%` }]
-      : selectedBaselines;
-  }, [hasStageFilter, hoveredStage, selectedBaselines, selectedStages]);
+    const hoveredTarget = selectedTargets.find((target) => target.stages.includes(hoveredStage));
+    return hoveredTarget
+      ? [{ ...hoveredTarget, label: `${hoveredStage} target ${hoveredTarget.value}%` }]
+      : selectedTargets;
+  }, [hasStageFilter, hoveredStage, selectedTargets, selectedStages]);
 
   const { ticks: yAxisTicks, max: yAxisMax, decimals: yAxisDecimals } = useMemo(() => {
     const maxValue = data.reduce((max, row) => {
@@ -43,9 +43,9 @@ export function LineStageRateChart({ data, selectedInspectionCategories = [] }: 
       }, 0);
       return Math.max(max, rowMax);
     }, 0);
-    const maxBaseline = visibleBaselines.reduce((max, baseline) => Math.max(max, baseline.value), 0);
-    return buildNicePercentTicks(Math.max(maxValue, maxBaseline));
-  }, [data, visibleBaselines]);
+    const maxTarget = visibleTargets.reduce((max, target) => Math.max(max, target.value), 0);
+    return buildNicePercentTicks(Math.max(maxValue, maxTarget));
+  }, [data, visibleTargets]);
 
   return (
     <div id="line-level-chart" className="rounded-lg border border-slate-200 bg-white p-4 shadow-card">
@@ -53,10 +53,10 @@ export function LineStageRateChart({ data, selectedInspectionCategories = [] }: 
         <div>
           <h2 className="font-display text-lg font-semibold text-slate-900">Line-Level Defect Rate Analysis</h2>
           <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-[11px] font-semibold text-green-800">
-            {visibleBaselines.map((baseline) => (
-              <span key={baseline.label} className="inline-flex items-center gap-1.5">
+            {visibleTargets.map((target) => (
+              <span key={target.label} className="inline-flex items-center gap-1.5">
                 <span className="w-5 border-t border-dashed border-green-800" />
-                {baseline.label}
+                {target.label}
               </span>
             ))}
           </div>
@@ -109,15 +109,15 @@ export function LineStageRateChart({ data, selectedInspectionCategories = [] }: 
               </div>
             )}
           />
-          {visibleBaselines.map((baseline) => (
+          {visibleTargets.map((target) => (
             <ReferenceLine
-              key={baseline.value}
-              y={baseline.value}
+              key={target.value}
+              y={target.value}
               stroke="#166534"
               strokeDasharray="6 5"
               strokeOpacity={0.72}
               label={{
-                value: `${baseline.value}% baseline`,
+                value: `${target.value}% target`,
                 position: "insideTopRight",
                 fill: "#166534",
                 fontSize: 10,
