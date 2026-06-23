@@ -5,6 +5,7 @@ export type DashboardFilters = {
   factory?: string;
   startDate?: string;
   endDate?: string;
+  weekNumbers?: string[];
   soNumbers?: string[];
   styles?: string[];
   lines?: string[];
@@ -26,6 +27,7 @@ export type FilterOptionsResponse = {
   lines: string[];
   defectDescriptions: string[];
   inspectionStages: InspectionStage[];
+  weekNumbers: string[];
   dateRange?: {
     startDate?: string | null;
     endDate?: string | null;
@@ -60,6 +62,8 @@ export type MonthlyTrendItem = {
 
 export type WeeklyTrendItem = {
   weekStart?: string;
+  date?: string;
+  label?: string;
   isoWeek: string;
   weekNumber: number;
   month: string;
@@ -159,6 +163,7 @@ export type StageDetailResponse = {
     status: StatusLevel;
   }>;
   trend: WeeklyTrendItem[];
+  dailyTrend?: WeeklyTrendItem[];
   detailTable: Array<{
     defectDescription: string;
     defects: number;
@@ -172,6 +177,7 @@ export type StageDetailResponse = {
 
 export type WeeklyTrendResponse = {
   weeklyTrend: WeeklyTrendItem[];
+  dailyTrend?: WeeklyTrendItem[];
   meta?: ApiMeta;
 };
 

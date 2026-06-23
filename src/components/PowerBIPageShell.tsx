@@ -6,20 +6,14 @@ export function PowerBIPageShell({
   children,
   pageId,
   pageExportFileName,
-  showScanQty = false,
-  scanQtyOverride,
+  showWeekNumbers = false,
   showBottomAccent = true,
   contentClassName = "",
 }: {
   children: ReactNode;
   pageId?: string;
   pageExportFileName?: string;
-  showScanQty?: boolean;
-  scanQtyOverride?: {
-    sewQty: number;
-    enQty: number;
-    fgQty: number;
-  };
+  showWeekNumbers?: boolean;
   showBottomAccent?: boolean;
   contentClassName?: string;
 }) {
@@ -31,7 +25,7 @@ export function PowerBIPageShell({
       <div
         className={`grid w-full gap-3 px-2 py-3 sm:px-3 xl:px-4 lg:grid-cols-[250px_minmax(0,1fr)] ${contentClassName}`}
       >
-        <SlicerPanel showScanQty={showScanQty} scanQtyOverride={scanQtyOverride} />
+        <SlicerPanel showWeekNumbers={showWeekNumbers} />
         <main className="min-w-0">{children}</main>
       </div>
       {showBottomAccent && <div className="h-1 bg-[linear-gradient(90deg,#7c2bd9,#3154d4,#00a9b7)]" />}

@@ -23,6 +23,7 @@ type FrontendFilterOptions = {
   soNumbers: string[];
   styles: string[];
   lines: string[];
+  weekNumbers: string[];
   defects: string[];
   inspectionCategories: InspectionStage[];
 };
@@ -50,6 +51,7 @@ const createInitialFilters = (): FilterState => ({
   factory: ALL_VALUE,
   dateFrom: "",
   dateTo: "",
+  weekNumbers: [],
   soNumbers: [],
   styles: [],
   lines: [],
@@ -63,6 +65,7 @@ const emptyOptions: FrontendFilterOptions = {
   soNumbers: [],
   styles: [],
   lines: [],
+  weekNumbers: [],
   defects: [],
   inspectionCategories: [],
 };
@@ -92,6 +95,7 @@ const toFrontendOptions = (options: FilterOptionsResponse): FrontendFilterOption
   soNumbers: options.soNumbers,
   styles: options.styles,
   lines: options.lines,
+  weekNumbers: options.weekNumbers ?? [],
   defects: options.defectDescriptions,
   inspectionCategories: options.inspectionStages,
 });
@@ -107,6 +111,7 @@ const resolveDefaults = (options: FilterOptionsResponse): FilterState => ({
     ALL_VALUE,
   dateFrom: options.dateRange?.startDate ?? "",
   dateTo: options.dateRange?.endDate ?? "",
+  weekNumbers: [],
   soNumbers: [],
   styles: [],
   lines: [],
@@ -177,6 +182,7 @@ export function DashboardFilterProvider({ children }: { children: ReactNode }) {
           soNumbers: [],
           styles: [],
           lines: [],
+          weekNumbers: [],
           defectDescriptions: [],
           inspectionCategories: [],
         };
@@ -195,6 +201,7 @@ export function DashboardFilterProvider({ children }: { children: ReactNode }) {
       soNumbers: [],
       styles: [],
       lines: [],
+      weekNumbers: [],
       defectDescriptions: [],
       inspectionCategories: [],
     }));

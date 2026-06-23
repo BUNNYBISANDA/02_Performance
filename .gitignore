@@ -1,9 +1,24 @@
 node_modules/
 dist/
+
+# Generated static dashboard data for GitHub Pages demo
+public/data/*.json
+public/data/**/*.json
+public/data/customers/
+!public/data/.gitkeep
+
+backend/backups/
 .tmp/
 *.tsbuildinfo
+
+# Environment files
 .env
 .env.*
+.env.local
+.env.development.local
+.env.production.local
+backend/.env
+backend/.env.local
 !.env.example
 !.env.development
 !.env.production

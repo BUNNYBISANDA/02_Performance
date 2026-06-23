@@ -37,6 +37,11 @@ limited to whichever customers have an exported folder, and changing other filte
 
 ### Regenerating the static snapshot
 
+Static JSON files under `public/data/` are generated artifacts and are ignored by
+Git. To regenerate them locally, run the export command below. For a GitHub Pages
+demo deployment, generate the JSON before building/deploying so the static build
+has data available.
+
 The JSON files under `public/data/` are produced by a backend script that reuses
 the exact same service functions the live API routes call, so the shape always
 matches what `/api/...` would return:

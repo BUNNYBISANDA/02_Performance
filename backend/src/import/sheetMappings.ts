@@ -17,7 +17,7 @@ export const sheetMappings: SheetMapping[] = [
     sheetName: "bridge_so_line",
     tableName: "o2.raw_bridge_so_line",
     columns: [
-      { column: "so_no_doc", type: "text" },
+      { column: "so_no_doc", type: "text", sourceAliases: ["SO_NO_MAP"] },
       { column: "fac_line", type: "text" },
     ],
   },
@@ -38,7 +38,7 @@ export const sheetMappings: SheetMapping[] = [
       { column: "fac_line", type: "text" },
       { column: "st", type: "text" },
       { column: "so_year", type: "text" },
-      { column: "so_no_doc", type: "text" },
+      { column: "so_no_doc", type: "text", sourceAliases: ["SO_NO_MAP"] },
       { column: "week", type: "text" },
       { column: "inspect_qty", type: "numeric", sourceAliases: ["inspet_qty"] },
     ],
@@ -47,7 +47,7 @@ export const sheetMappings: SheetMapping[] = [
     sheetName: "data_endline",
     tableName: "o2.raw_data_endline",
     columns: [
-      { column: "so_no_doc", type: "text" },
+      { column: "so_no_doc", type: "text", sourceAliases: ["SO_NO_MAP"] },
       { column: "fac_line", type: "text" },
       { column: "total_inspect", type: "numeric" },
       { column: "job_date", type: "date" },
@@ -200,7 +200,7 @@ export const sheetMappings: SheetMapping[] = [
     sheetName: "mt_so",
     tableName: "o2.raw_mt_so",
     columns: [
-      { column: "so_no_doc", type: "text" },
+      { column: "so_no_doc", type: "text", sourceAliases: ["SO_NO_MAP"] },
       { column: "brand", type: "text" },
       { column: "style_ref", type: "text" },
       { column: "shipment_date", type: "date" },

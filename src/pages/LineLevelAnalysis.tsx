@@ -118,7 +118,10 @@ export function LineLevelAnalysis() {
         ) : (
           <>
             <DashboardUpdateStatus isUpdating={isUpdating} error={error} onRetry={retry} />
-            <LineStageRateChart data={chartRows} />
+            <LineStageRateChart
+              data={chartRows}
+              selectedInspectionCategories={filters.inspectionCategories}
+            />
 
             <section id="line-level-detail-table" className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-card">
               <div className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-3">

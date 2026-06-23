@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { closePool } from "../db/pool.js";
 import type { QualityFilters } from "../services/qualityFilters.js";
 import {
+  getDailyTrend,
   getDefectCategories,
   getFilterOptions,
   getLineAnalysis,
@@ -35,6 +36,7 @@ const EMPTY_ARRAY_FILTERS = {
   lines: [] as string[],
   defectDescriptions: [] as string[],
   inspectionStages: [] as string[],
+  weekNumbers: [] as string[],
 };
 
 const STAGE_FILE_SUFFIX: Record<(typeof inspectionStages)[number], string> = {
@@ -118,13 +120,26 @@ const exportCustomer = async (scope: CustomerScope) => {
 
   await writeJsonFile(path.join(customerDir, "filters.json"), await getFilterOptions(scope.filters));
   await writeJsonFile(path.join(customerDir, "overview.json"), await getOverview(scope.filters));
-  await writeJsonFile(path.join(customerDir, "weekly-trend.json"), await getWeeklyTrend(scope.filters));
+  const [weeklyTrend, dailyTrend] = await Promise.all([
+    getWeeklyTrend(scope.filters),
+    getDailyTrend(scope.filters),
+  ]);
+  await writeJsonFile(path.join(customerDir, "weekly-trend.json"), {
+    ...weeklyTrend,
+    dailyTrend: dailyTrend.dailyTrend,
+  });
   await writeJsonFile(path.join(customerDir, "defect-categories.json"), await getDefectCategories(scope.filters));
   await writeJsonFile(path.join(customerDir, "line-analysis.json"), await getLineAnalysis(scope.filters));
 
   for (const stage of inspectionStages) {
-    const detail = await getStageDetail(scope.filters, stage);
-    await writeJsonFile(path.join(customerDir, `stage-detail-${STAGE_FILE_SUFFIX[stage]}.json`), detail);
+    const [detail, dailyDetail] = await Promise.all([
+      getStageDetail(scope.filters, stage, "weekly"),
+      getStageDetail(scope.filters, stage, "daily"),
+    ]);
+    await writeJsonFile(path.join(customerDir, `stage-detail-${STAGE_FILE_SUFFIX[stage]}.json`), {
+      ...detail,
+      dailyTrend: dailyDetail.trend,
+    });
   }
 };
 

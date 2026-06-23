@@ -15,7 +15,7 @@ export function TopFilterRow({
 
   return (
     <section className="rounded-lg border border-slate-200 bg-white p-3 shadow-card">
-      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-[1.1fr_1fr_1fr_1fr_1.15fr_1fr_auto]">
+      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-[1.1fr_0.8fr_1fr_1fr_1fr_1.15fr_1fr_auto]">
         <label>
           <span className="mb-1 block text-[11px] font-bold uppercase text-slate-500">Duration Date</span>
           <div className="grid grid-cols-2 gap-2">
@@ -33,6 +33,12 @@ export function TopFilterRow({
             />
           </div>
         </label>
+        <MultiSelectFilter
+          label="Week Number"
+          selectedValues={filters.weekNumbers}
+          options={filterOptions.weekNumbers}
+          onChange={(value) => setFilter("weekNumbers", value)}
+        />
         <MultiSelectFilter
           label="SO Number"
           selectedValues={filters.soNumbers}

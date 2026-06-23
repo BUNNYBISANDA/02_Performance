@@ -5,6 +5,7 @@ export type QualityFilters = {
   factory?: string;
   startDate?: string;
   endDate?: string;
+  weekNumbers: string[];
   soNumbers: string[];
   styles: string[];
   lines: string[];
@@ -28,6 +29,7 @@ const filtersSchema = z.object({
   factory: z.string().min(1).optional(),
   startDate: dateString,
   endDate: dateString,
+  weekNumbers: z.array(z.string().regex(/^W?\d{1,2}$/i, "Expected week labels such as W02")),
   soNumbers: z.array(z.string().min(1)),
   styles: z.array(z.string().min(1)),
   lines: z.array(z.string().min(1)),
@@ -61,6 +63,7 @@ export const parseQualityFilters = (query: Record<string, QueryValue>): QualityF
     factory: parseText(query.factory),
     startDate: parseText(query.startDate),
     endDate: parseText(query.endDate),
+    weekNumbers: parseCommaList(query.weekNumbers),
     soNumbers: parseCommaList(query.soNumbers),
     styles: parseCommaList(query.styles),
     lines: parseCommaList(query.lines),
@@ -109,6 +112,15 @@ export const buildQualityWhereClause = (
 
   if (filters.endDate) {
     conditions.push(`${alias}.inspection_date <= ${pushValue(filters.endDate)}::date`);
+  }
+
+  if (filters.weekNumbers.length > 0) {
+    const weekNumbers = filters.weekNumbers
+      .map((value) => Number(value.replace(/^W/i, "")))
+      .filter((value) => Number.isInteger(value) && value >= 1 && value <= 53);
+    if (weekNumbers.length > 0) {
+      conditions.push(`EXTRACT(WEEK FROM ${alias}.inspection_date)::int = ANY(${pushValue(weekNumbers)}::int[])`);
+    }
   }
 
   if (filters.soNumbers.length > 0) {

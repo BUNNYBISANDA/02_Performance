@@ -5,14 +5,18 @@ import { DashboardError, DashboardLoading, DashboardUpdateStatus } from "../comp
 import { useQualityFilters } from "../lib/filter-context";
 import { dashboardQueryKey, getWeeklyTrend } from "../services/dashboardApi";
 import { useApiQuery } from "../hooks/useApiQuery";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
 export function WeeklyTrendAnalysis() {
   const { filters, filtersReady, filtersError, refetchFilters } = useQualityFilters();
-  const queryKey = useMemo(() => dashboardQueryKey("/weekly-trend", filters), [filters]);
+  const [viewBy, setViewBy] = useState<"weekly" | "daily">("weekly");
+  const queryKey = useMemo(
+    () => dashboardQueryKey("/weekly-trend", filters, { granularity: viewBy }),
+    [filters, viewBy],
+  );
   const { data, isInitialLoading, isUpdating, error, retry } = useApiQuery({
     queryKey,
-    queryFn: (signal) => getWeeklyTrend(filters, signal),
+    queryFn: (signal) => getWeeklyTrend(filters, viewBy, signal),
     enabled: filtersReady,
     staleTime: 120_000,
     debounceMs: 300,
@@ -23,6 +27,7 @@ export function WeeklyTrendAnalysis() {
     <PowerBIPageShell
       pageId="weekly-page"
       pageExportFileName="O2_Weekly_Trend_Analysis"
+      showWeekNumbers
       showBottomAccent={false}
     >
       {filtersError ? (
@@ -36,7 +41,7 @@ export function WeeklyTrendAnalysis() {
       ) : (
         <>
           <DashboardUpdateStatus isUpdating={isUpdating} error={error} onRetry={retry} />
-          <WeeklyStageTrendChart data={rows} highlights={[]} />
+          <WeeklyStageTrendChart data={rows} highlights={[]} viewBy={viewBy} onViewByChange={setViewBy} />
         </>
       )}
     </PowerBIPageShell>

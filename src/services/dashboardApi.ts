@@ -9,7 +9,7 @@ import type {
   StageDetailResponse,
   WeeklyTrendResponse,
 } from "../types/api";
-import { getJson } from "./apiClient";
+import { DATA_MODE, getJson } from "./apiClient";
 import {
   mapDefectCategoriesResponse,
   mapLineAnalysisResponse,
@@ -37,6 +37,7 @@ export const toDashboardFilters = (filters: FilterState): DashboardFilters => ({
   factory: filters.factory && filters.factory !== ALL_VALUE ? filters.factory : undefined,
   startDate: filters.dateFrom || undefined,
   endDate: filters.dateTo || undefined,
+  weekNumbers: filters.weekNumbers,
   soNumbers: filters.soNumbers,
   styles: filters.styles,
   lines: filters.lines,
@@ -72,13 +73,24 @@ export const getOverview = async (filters: FilterState, signal?: AbortSignal): P
   return mapped;
 };
 
-export const getWeeklyTrend = async (filters: FilterState, signal?: AbortSignal) => {
+export const getWeeklyTrend = async (
+  filters: FilterState,
+  granularity: "daily" | "weekly" = "weekly",
+  signal?: AbortSignal,
+) => {
   const response = await getJson<WeeklyTrendResponse>(
     "/weekly-trend",
-    toDashboardFilters(filters),
+    { ...toDashboardFilters(filters), granularity },
     { signal },
   );
-  const mapped = mapWeeklyTrendResponse(response);
+  const responseForMode = DATA_MODE === "static" && granularity === "daily" && response.dailyTrend
+    ? { ...response, weeklyTrend: response.dailyTrend }
+    : response;
+  const mapped = mapWeeklyTrendResponse(responseForMode);
+  if (DATA_MODE === "static" && filters.weekNumbers.length > 0) {
+    const selectedWeeks = new Set(filters.weekNumbers.map((value) => value.toUpperCase()));
+    mapped.weeklyTrend = mapped.weeklyTrend.filter((item) => selectedWeeks.has(item.isoWeek.toUpperCase()));
+  }
   logRowCount("Weekly Trend", mapped);
   return mapped;
 };
@@ -97,12 +109,25 @@ export const getLineAnalysis = async (filters: FilterState, signal?: AbortSignal
   return mapped;
 };
 
-export const getStageDetail = async (filters: FilterState, stage: InspectionStage, signal?: AbortSignal) => {
+export const getStageDetail = async (
+  filters: FilterState,
+  stage: InspectionStage,
+  granularity: "daily" | "weekly",
+  signal?: AbortSignal,
+) => {
   const response = await getJson<StageDetailResponse>("/stage-detail", {
     ...toDashboardFilters(filters),
     stage,
+    granularity,
   }, { signal });
-  const mapped = mapStageDetailResponse(response);
+  const responseForMode = DATA_MODE === "static" && granularity === "daily" && response.dailyTrend
+    ? { ...response, trend: response.dailyTrend }
+    : response;
+  const mapped = mapStageDetailResponse(responseForMode);
+  if (DATA_MODE === "static" && filters.weekNumbers.length > 0) {
+    const selectedWeeks = new Set(filters.weekNumbers.map((value) => value.toUpperCase()));
+    mapped.trend = mapped.trend.filter((item) => selectedWeeks.has(item.isoWeek.toUpperCase()));
+  }
   logRowCount("Stage Detail", mapped);
   return mapped;
 };

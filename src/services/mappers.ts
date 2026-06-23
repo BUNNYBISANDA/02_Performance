@@ -91,6 +91,8 @@ export const mapWeeklyTrendToChartData = (items: unknown): WeeklyTrendItem[] =>
     const isoWeekRaw = asString(row.isoWeek ?? row.iso_week ?? row.week);
     return {
       weekStart: asString(row.weekStart ?? row.week_start) || undefined,
+      date: asString(row.date ?? row.inspectionDate ?? row.inspection_date) || undefined,
+      label: asString(row.label) || undefined,
       isoWeek: isoWeekRaw.replace(/^\d{4}-/, "") || `W${String(index + 1).padStart(2, "0")}`,
       weekNumber: asNumber(row.weekNumber ?? row.week_number),
       month: asString(row.month),
@@ -216,7 +218,10 @@ const mapStageDetailRow = (value: unknown) => {
 export const mapStageTrendToChartData = (items: WeeklyTrendItem[], stage: InspectionStage) => {
   const key = stageKeys[stage] ?? "inline";
   return items.map((item) => ({
-    week: item.isoWeek,
+    week: item.label ?? (item.date ? new Date(`${item.date}T00:00:00`).toLocaleDateString("en-US", {
+      month: "short",
+      day: "2-digit",
+    }) : item.isoWeek),
     month: item.month,
     [stage]: asNumber(item[key]),
   }));
@@ -249,10 +254,12 @@ export const mapStageDetailResponse = (response: StageDetailResponse): StageDeta
     status: asStatus(row.status),
   })),
   trend: mapWeeklyTrendToChartData(response.trend),
+  dailyTrend: response.dailyTrend ? mapWeeklyTrendToChartData(response.dailyTrend) : undefined,
   detailTable: asArray(response.detailTable).map(mapStageDetailRow),
 });
 
 export const mapWeeklyTrendResponse = (response: WeeklyTrendResponse): WeeklyTrendResponse => ({
   ...response,
   weeklyTrend: mapWeeklyTrendToChartData(response.weeklyTrend),
+  dailyTrend: response.dailyTrend ? mapWeeklyTrendToChartData(response.dailyTrend) : undefined,
 });

@@ -110,6 +110,7 @@ const publicFilters = (filters: QualityFilters) => ({
   factory: filters.factory ?? null,
   startDate: filters.startDate ?? null,
   endDate: filters.endDate ?? null,
+  weekNumbers: filters.weekNumbers,
   soNumbers: filters.soNumbers,
   styles: filters.styles,
   lines: filters.lines,
@@ -331,6 +332,14 @@ const getFilterOptionsUncached = async (filters: QualityFilters) => {
           FROM (SELECT DISTINCT fac_line FROM filtered WHERE NULLIF(fac_line, '') IS NOT NULL) values
         ) AS lines,
         (
+          SELECT COALESCE(json_agg(week_number ORDER BY week_number), '[]'::json)
+          FROM (
+            SELECT DISTINCT to_char(inspection_date, '"W"IW') AS week_number
+            FROM filtered
+            WHERE inspection_date IS NOT NULL
+          ) values
+        ) AS "weekNumbers",
+        (
           SELECT COALESCE(json_agg(defect_desc_eng ORDER BY defect_desc_eng), '[]'::json)
           FROM (SELECT DISTINCT defect_desc_eng FROM filtered WHERE NULLIF(defect_desc_eng, '') IS NOT NULL) values
         ) AS "defectDescriptions",
@@ -368,6 +377,7 @@ const getFilterOptionsUncached = async (filters: QualityFilters) => {
     soNumbers: row.soNumbers ?? [],
     styles: row.styles ?? [],
     lines: row.lines ?? [],
+    weekNumbers: row.weekNumbers ?? [],
     defectDescriptions: row.defectDescriptions ?? [],
     inspectionStages: row.inspectionStages ?? [],
     defaultCustomer: defaults.defaultCustomer,
@@ -611,6 +621,107 @@ export const getWeeklyTrend = async (filters: QualityFilters) => {
   return { weeklyTrend: [...weeks.values()], meta: makeMeta(filters, rowCount) };
 };
 
+export const getDailyTrend = async (filters: QualityFilters) => {
+  const base = baseCte(filters);
+  const [result, rowCount] = await Promise.all([
+    timedQuery(
+      "stage.daily-trend",
+      `
+        ${base.sql},
+        selected_weeks AS (
+          SELECT DISTINCT date_trunc('week', inspection_date)::date AS week_start
+          FROM filtered
+          WHERE inspection_date IS NOT NULL
+        ),
+        selected_stages AS (
+          SELECT DISTINCT inspection_stage
+          FROM filtered
+          WHERE NULLIF(inspection_stage, '') IS NOT NULL
+        ),
+        calendar_days AS (
+          SELECT
+            (selected_weeks.week_start + day_offset)::date AS inspection_day,
+            selected_stages.inspection_stage
+          FROM selected_weeks
+          CROSS JOIN generate_series(0, 6) AS offsets(day_offset)
+          CROSS JOIN selected_stages
+        ),
+        day_stage_defects AS (
+          SELECT
+            inspection_date::date AS inspection_day,
+            inspection_stage,
+            SUM(defect_qty) AS defects
+          FROM filtered
+          WHERE inspection_date IS NOT NULL
+          GROUP BY inspection_day, inspection_stage
+        ),
+        day_stage_denominators AS (
+          SELECT
+            inspection_day,
+            inspection_stage,
+            SUM(denominator) AS denominator
+          FROM (
+            SELECT
+              inspection_date::date AS inspection_day,
+              inspection_stage,
+              denominator_key,
+              MAX(${denominatorExpression}) AS denominator
+            FROM filtered
+            WHERE inspection_date IS NOT NULL
+            GROUP BY inspection_day, inspection_stage, denominator_key
+          ) denominator_rows
+          GROUP BY inspection_day, inspection_stage
+        )
+        SELECT
+          to_char(calendar_days.inspection_day, 'YYYY-MM-DD') AS inspection_date,
+          to_char(calendar_days.inspection_day, 'Mon DD') AS label,
+          to_char(calendar_days.inspection_day, 'IYYY-"W"IW') AS iso_week,
+          extract(week from calendar_days.inspection_day)::int AS week_number,
+          to_char(calendar_days.inspection_day, 'Mon') AS month,
+          calendar_days.inspection_stage,
+          COALESCE(day_stage_defects.defects, 0) AS defects,
+          COALESCE(day_stage_denominators.denominator, 0) AS denominator
+        FROM calendar_days
+        LEFT JOIN day_stage_defects
+          ON day_stage_defects.inspection_day = calendar_days.inspection_day
+         AND day_stage_defects.inspection_stage = calendar_days.inspection_stage
+        LEFT JOIN day_stage_denominators
+          ON day_stage_denominators.inspection_day = calendar_days.inspection_day
+         AND day_stage_denominators.inspection_stage = calendar_days.inspection_stage
+        ORDER BY calendar_days.inspection_day, ${stageOrderCase("calendar_days.inspection_stage")}
+      `,
+      base.values,
+    ),
+    getFilteredRowCount(filters),
+  ]);
+
+  const days = new Map<string, Record<string, string | number>>();
+  for (const row of result.rows) {
+    const date = String(row.inspection_date);
+    const stage = String(row.inspection_stage);
+    const defects = toNumber(row.defects);
+    const denominator = toNumber(row.denominator);
+    const existing = days.get(date) ?? {
+      date,
+      label: String(row.label).trim(),
+      weekStart: date,
+      isoWeek: String(row.iso_week),
+      weekNumber: toNumber(row.week_number),
+      month: String(row.month).trim(),
+      inline: 0,
+      endline: 0,
+      preFinal: 0,
+      final: 0,
+      thirdParty: 0,
+    };
+
+    existing[stageKey(stage)] = denominator === 0 ? 0 : round((defects / denominator) * 100);
+    days.set(date, existing);
+  }
+
+  return { dailyTrend: [...days.values()], meta: makeMeta(filters, rowCount) };
+};
+
 export const getDefectCategories = async (filters: QualityFilters) => {
   const base = baseCte(filters);
   const [result, rowCount] = await Promise.all([
@@ -850,7 +961,11 @@ export const getLineAnalysis = async (filters: QualityFilters) => {
   };
 };
 
-export const getStageDetail = async (filters: QualityFilters, stageValue: string) => {
+export const getStageDetail = async (
+  filters: QualityFilters,
+  stageValue: string,
+  granularity: "daily" | "weekly" = "weekly",
+) => {
   const stage = normalizeStage(stageValue);
   const stageFilters = withInspectionStage(filters, stage);
   const base = baseCte(stageFilters);
@@ -893,10 +1008,14 @@ export const getStageDetail = async (filters: QualityFilters, stageValue: string
     base.values,
   );
 
+  const trendPromise = granularity === "daily"
+    ? getDailyTrend(stageFilters).then((result) => result.dailyTrend)
+    : getWeeklyTrend(stageFilters).then((result) => result.weeklyTrend);
+
   const [statsResult, defectsResult, trend] = await Promise.all([
     statsPromise,
     defectsPromise,
-    getWeeklyTrend(stageFilters),
+    trendPromise,
   ]);
   const stats = statsResult.rows[0] ?? {};
   const defects = toNumber(stats.defects);
@@ -936,7 +1055,7 @@ export const getStageDetail = async (filters: QualityFilters, stageValue: string
       },
     ],
     topDefects,
-    trend: trend.weeklyTrend,
+    trend,
     detailTable: topDefects.map((row) => ({
       defectDescription: row.name,
       defects: row.defects,

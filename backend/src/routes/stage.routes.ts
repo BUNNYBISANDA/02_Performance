@@ -11,7 +11,8 @@ stageRouter.get("/stage-detail", async (req, res, next) => {
     const stage = inspectionStages.includes(stageParam as (typeof inspectionStages)[number])
       ? stageParam
       : "Inline";
-    const detail = await getStageDetail(filters, stage);
+    const granularity = req.query.granularity === "daily" ? "daily" : "weekly";
+    const detail = await getStageDetail(filters, stage, granularity);
 
     res.json(detail);
   } catch (error) {

@@ -55,13 +55,14 @@ function getStageDeepDiveTitle(customer: string | undefined, stage: InspectionSt
 export function InspectionStageDeepDivePage() {
   const { filters, filtersReady, filtersError, refetchFilters } = useQualityFilters();
   const [stage, setStage] = useState<InspectionStage>("Inline");
+  const [viewBy, setViewBy] = useState<"weekly" | "daily">("weekly");
   const queryKey = useMemo(
-    () => dashboardQueryKey("/stage-detail", filters, { stage }),
-    [filters, stage],
+    () => dashboardQueryKey("/stage-detail", filters, { stage, granularity: viewBy }),
+    [filters, stage, viewBy],
   );
   const { data, isInitialLoading, isUpdating, error, retry } = useApiQuery({
     queryKey,
-    queryFn: (signal) => getStageDetail(filters, stage, signal),
+    queryFn: (signal) => getStageDetail(filters, stage, viewBy, signal),
     enabled: filtersReady,
     staleTime: 120_000,
     debounceMs: 300,
@@ -159,11 +160,29 @@ export function InspectionStageDeepDivePage() {
 
         <section id="stage-trend-chart">
           <div className="mb-3 flex items-center justify-between gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 shadow-card">
-            <h2 className="font-display text-lg font-semibold text-slate-900">{stage} Defect Rate Trend</h2>
-            <ExportMenu
-              targetId="stage-trend-chart"
-              fileName={`O2_${stage.replace(/\s+/g, "_")}_Defect_Rate_Trend`}
-            />
+            <div>
+              <h2 className="font-display text-lg font-semibold text-slate-900">{stage} Defect Rate Trend</h2>
+              <p className="text-xs font-medium text-slate-500">
+                {viewBy === "daily" ? "Daily trend" : "Weekly trend"}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <label className="flex items-center gap-1.5 text-xs font-semibold text-slate-600">
+                <span className="hidden sm:inline">View By</span>
+                <select
+                  value={viewBy}
+                  onChange={(event) => setViewBy(event.target.value as "weekly" | "daily")}
+                  className="h-8 rounded-md border border-slate-200 bg-white px-2 text-xs font-semibold text-slate-700 outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-cyan-100"
+                >
+                  <option value="weekly">Week</option>
+                  <option value="daily">Day</option>
+                </select>
+              </label>
+              <ExportMenu
+                targetId="stage-trend-chart"
+                fileName={`O2_${stage.replace(/\s+/g, "_")}_Defect_Rate_Trend`}
+              />
+            </div>
           </div>
           <TrendChart
             data={trend}

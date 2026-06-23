@@ -69,7 +69,7 @@ export function DefectCategoryAnalysis() {
             <DashboardUpdateStatus isUpdating={isUpdating} error={error} onRetry={retry} />
             <GroupedDefectBarChart data={chartRows} />
 
-            <section id="defect-category-detail-table" className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-card">
+            <section id="defect-category-detail-table" className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-card transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:border-cyan-200 hover:shadow-lift">
               <div className="flex items-center justify-between gap-3 border-b border-slate-200 px-4 py-3">
                 <h2 className="font-display text-lg font-semibold text-slate-900">Defect Category Detail Summary</h2>
                 <ExcelExportButton

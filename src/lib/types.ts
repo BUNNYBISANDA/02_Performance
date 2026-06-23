@@ -27,6 +27,7 @@ export type FilterState = {
   customer: Customer;
   dateFrom: string;
   dateTo: string;
+  weekNumbers: string[];
   factory: string;
   soNumbers: string[];
   styles: string[];

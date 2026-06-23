@@ -1,24 +1,14 @@
 import { RotateCcw, SlidersHorizontal } from "lucide-react";
 import { MultiSelectFilter } from "./filters/MultiSelectFilter";
 import { useQualityFilters } from "../lib/filter-context";
-import { formatNumber } from "../lib/format";
 import type { FilterState } from "../lib/types";
 
-type ScanQuantityOverride = {
-  sewQty: number;
-  enQty: number;
-  fgQty: number;
-};
-
 export function SlicerPanel({
-  showScanQty = false,
-  scanQtyOverride,
+  showWeekNumbers = false,
 }: {
-  showScanQty?: boolean;
-  scanQtyOverride?: ScanQuantityOverride;
+  showWeekNumbers?: boolean;
 }) {
   const { filters, filterOptions, isLoadingFilters, filtersError, setFilter, resetSlicers, refetchFilters } = useQualityFilters();
-  const scan = scanQtyOverride ?? { sewQty: 0, enQty: 0, fgQty: 0 };
 
   return (
     <aside className="rounded-lg border border-slate-200 bg-white p-3 shadow-card lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto">
@@ -70,6 +60,15 @@ export function SlicerPanel({
           </div>
         </div>
 
+        {showWeekNumbers && (
+          <MultiSelectFilter
+            label="Week Number"
+            selectedValues={filters.weekNumbers}
+            options={filterOptions.weekNumbers}
+            onChange={(value) => setFilter("weekNumbers", value)}
+          />
+        )}
+
         <MultiSelectFilter
           label="SO Number"
           selectedValues={filters.soNumbers}
@@ -102,28 +101,6 @@ export function SlicerPanel({
             setFilter("inspectionCategories", value as FilterState["inspectionCategories"])
           }
         />
-
-        {showScanQty && (
-          <div className="rounded-md border border-slate-200 bg-slate-50">
-            <div className="border-b border-slate-200 px-3 py-2 text-[11px] font-bold uppercase text-slate-500">
-              Scan QTY
-            </div>
-            <div className="divide-y divide-slate-200 text-sm">
-              <div className="flex justify-between px-3 py-2">
-                <span className="font-medium text-slate-600">SEW QTY</span>
-                <span className="font-bold text-slate-900">{formatNumber(scan.sewQty)}</span>
-              </div>
-              <div className="flex justify-between px-3 py-2">
-                <span className="font-medium text-slate-600">EN QTY</span>
-                <span className="font-bold text-slate-900">{formatNumber(scan.enQty)}</span>
-              </div>
-              <div className="flex justify-between px-3 py-2">
-                <span className="font-medium text-slate-600">FG QTY</span>
-                <span className="font-bold text-slate-900">{formatNumber(scan.fgQty)}</span>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </aside>
   );

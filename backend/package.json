@@ -8,7 +8,9 @@
     "build": "tsc -p tsconfig.json",
     "start": "node dist/server.js",
     "migrate": "tsx src/db/migrate.ts",
-    "import:excel": "tsx src/import/importExcel.ts",
+    "import:excel": "tsx src/scripts/safeRefreshFromExcel.ts",
+    "refresh:data": "tsx src/scripts/safeRefreshFromExcel.ts",
+    "refresh:data:and-export": "tsx src/scripts/safeRefreshFromExcel.ts --export-static",
     "refresh:views": "tsx src/db/refreshMaterializedViews.ts",
     "export:static": "tsx src/scripts/exportStaticData.ts"
   },

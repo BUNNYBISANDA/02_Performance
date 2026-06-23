@@ -92,8 +92,6 @@ export function ExecutiveOverview() {
     <PowerBIPageShell
       pageId="overview-page"
       pageExportFileName="O2_Executive_Overview"
-      showScanQty
-      scanQtyOverride={data?.scanQty}
       showBottomAccent={false}
       contentClassName="pb-2"
     >
